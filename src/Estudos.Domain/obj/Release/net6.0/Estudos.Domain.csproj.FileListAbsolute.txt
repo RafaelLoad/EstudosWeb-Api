@@ -1,0 +1,11 @@
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\bin\Release\net6.0\Estudos.Domain.deps.json
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\bin\Release\net6.0\Estudos.Domain.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\bin\Release\net6.0\Estudos.Domain.pdb
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Release\net6.0\Estudos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Release\net6.0\Estudos.Domain.AssemblyInfoInputs.cache
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Release\net6.0\Estudos.Domain.AssemblyInfo.cs
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Release\net6.0\Estudos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Release\net6.0\Estudos.Domain.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Release\net6.0\refint\Estudos.Domain.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Release\net6.0\Estudos.Domain.pdb
+C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Release\net6.0\ref\Estudos.Domain.dll
