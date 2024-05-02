@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Gt8uAqs2KOlFC6l9exA+NnG9TRe4Hh6Jvqzc/JbN+VCxu0YvkpTnf/Waxa/kjv5LJYtmvpBNjhGiM4OXeQWqQ==",
+  "dgSpecHash": "A6Bb1tsvudIt9bGF0VnNtNtwisZmSyhHfUnBFyScN5lMGkfBdohrCCbi30K4LbzqM8irdNbNOtpcDHuXyG6O6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Blazor.Web\\Estudos.Blazor.Web.csproj",
+  "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Blazor.Web\\Estudos.Blazor.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.28\\microsoft.aspnetcore.authorization.6.0.28.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.28\\microsoft.aspnetcore.components.6.0.28.nupkg.sha512",

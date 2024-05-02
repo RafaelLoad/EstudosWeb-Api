@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj": {}
+    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj": {
+    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj",
         "projectName": "Estudos.Application",
-        "projectPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Application\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj"
+              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj"
               },
-              "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
+              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
               }
             }
           }
@@ -41,6 +41,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -52,7 +57,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,18 +67,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.129\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj": {
+    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
         "projectName": "Estudos.Data",
-        "projectPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Data\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +95,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
+              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
               }
             }
           }
@@ -99,6 +105,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -116,7 +127,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -125,18 +137,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.129\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj",
         "projectName": "Estudos.Domain",
-        "projectPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.Domain\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -159,6 +171,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -170,7 +187,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -179,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.129\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

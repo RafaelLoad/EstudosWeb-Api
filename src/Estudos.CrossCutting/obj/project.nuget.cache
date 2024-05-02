@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gzwn/8lfykFtov8m/ox1JnOnAVN2Qja0frUgi7joGFZuCnnEDv772sqh2VyqgL4pmpR4eO7NGz7iQN9Un5E96A==",
+  "dgSpecHash": "8yZg7KfCvHOb6k3mzpDrO5WSM25GmUQfM1cYkZ7Bmt09pO50HYw2HbAMKikiWGLLML379xnqdF9Ok1bg+37T3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj",
+  "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.29\\microsoft.entityframeworkcore.6.0.29.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.29\\microsoft.entityframeworkcore.abstractions.6.0.29.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tlhmy1Rn6975CirLCbXjqbxuuQI5eYXWmwpebf5ckQUa02zmFrZRXmjuL9regar7jjtTL1sUJBNe3mb42W13jQ==",
+  "dgSpecHash": "98I/ctWs2iS3bgXNXB4M/vkhOXSpF7RXSsXATklhRNFNIVyp2maNZvXAockyM1mgK8I8qxHRSmXfAZZBQPPsqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Documents\\ESTUDOS TS\\Estudos\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
+  "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
