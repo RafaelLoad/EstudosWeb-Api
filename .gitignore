@@ -361,14 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-*.v2
-*.v2
-.vs/Daimler.CTC/v17/.suo
-.vs/Daimler.CTC/v17/.suo
-.vs/Daimler.CTC/v17/.suo
-*.v2
-.vs/Daimler.CTC/DesignTimeBuild/.dtbcache.v2
-.vs/Daimler.CTC/v17/.futdcache.v2
-.vs/Daimler.CTC/v17/.suo
-/src/Daimler.RequisicaoDePecas.Web/wwwroot/ArquivosCarga
-/src/Daimler.RequisicaoDePecas.Web/.config/dotnet-tools.json
