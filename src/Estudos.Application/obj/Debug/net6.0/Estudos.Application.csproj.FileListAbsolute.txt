@@ -1,0 +1,17 @@
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\bin\Debug\net6.0\Estudos.Application.deps.json
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\bin\Debug\net6.0\Estudos.Application.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\bin\Debug\net6.0\Estudos.Application.pdb
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\Estudos.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\Estudos.Application.AssemblyInfoInputs.cache
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\Estudos.Application.AssemblyInfo.cs
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\Estudos.Application.csproj.CoreCompileInputs.cache
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\Estudos.Application.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\refint\Estudos.Application.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\Estudos.Application.pdb
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\ref\Estudos.Application.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\bin\Debug\net6.0\Estudos.Domain.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\bin\Debug\net6.0\Estudos.Domain.pdb
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\Estudos.Application.csproj.AssemblyReference.cache
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\obj\Debug\net6.0\Estudos.Application.csproj.CopyComplete
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\bin\Debug\net6.0\Estudos.Data.dll
+C:\Users\fh167\Documents\Estudos\src\Estudos.Application\bin\Debug\net6.0\Estudos.Data.pdb
