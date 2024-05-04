@@ -265,6 +265,8 @@ ServiceFabricBackup/
 *.mdf
 *.ldf
 *.ndf
+*.db
+
 
 # Business Intelligence projects
 *.rdl.data
@@ -449,3 +451,5 @@ src/Estudos.Application/bin/Debug/net6.0/Estudos.Application.dll
 .vs/Estudos/v17/DocumentLayout.json
 .vs/Estudos/v17/.suo
 .vs/Estudos/v17/.suo
+*.dll
+*.pdb
