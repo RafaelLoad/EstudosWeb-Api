@@ -453,3 +453,6 @@ src/Estudos.Application/bin/Debug/net6.0/Estudos.Application.dll
 .vs/Estudos/v17/.suo
 *.dll
 *.pdb
+*.dll
+*.pdb
+*.exe
