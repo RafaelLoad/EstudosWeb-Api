@@ -25,7 +25,7 @@ builder.Services.AddDependencies();
 
 builder.Services.AddDbContext<DbContext, Context>(options =>
 {
-    if (env.EnvironmentName == "inMemoryDb")
+    //if (env.EnvironmentName == "inMemoryDb")
         options.UseInMemoryDatabase("Estudos");
 
     //else

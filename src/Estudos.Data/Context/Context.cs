@@ -1,4 +1,5 @@
-﻿using Estudos.Domain.Entities;
+﻿using Estudos.Data.Mappings;
+using Estudos.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Estudos.Data.Context
@@ -11,7 +12,11 @@ namespace Estudos.Data.Context
         {
         }
 
-        public DbSet<Library> Library { get; set; }
+        public DbSet<User> Users { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
+        }
     }
 }
