@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Estudos.Domain.ViewModel
 {
-    public class UserViewModel
+    public class ClienteViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
