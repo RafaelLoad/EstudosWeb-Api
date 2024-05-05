@@ -2,7 +2,7 @@
 {
     public class WebSettings
     {
-        public DatabaseSettings Database { get; set; }
+        public ConnectionStrings ConnectionStrings { get; set; }
 
     }
 }

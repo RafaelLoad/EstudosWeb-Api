@@ -25,7 +25,7 @@ namespace Estudos.Application.Login
             throw new NotImplementedException();
         }
 
-        public Task<User> Alter(LibraryViewModel obj)
+        public Task<Cliente> Alter(LibraryViewModel obj)
         {
             throw new NotImplementedException();
         }
@@ -35,12 +35,12 @@ namespace Estudos.Application.Login
             throw new NotImplementedException();
         }
 
-        public Task<List<User>> GetAll(LibraryViewModel obj)
+        public Task<List<Cliente>> GetAll(LibraryViewModel obj)
         {
             throw new NotImplementedException();
         }
 
-        public Task<User> GetById(int id)
+        public Task<Cliente> GetById(int id)
         {
             throw new NotImplementedException();
         }

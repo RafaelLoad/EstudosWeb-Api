@@ -26,7 +26,7 @@ namespace Estudos.CrossCutting
             services
                 .AddScoped<ILibraryService, LibraryService>()
                 .AddScoped<ILoginService, LoginService>()
-                .AddScoped<IUsuarioService, UsuarioService>();
+                .AddScoped<IClienteService, ClienteService>();
         }
 
         private static void AddDomainSetup(this IServiceCollection services)
@@ -34,7 +34,7 @@ namespace Estudos.CrossCutting
             services
                 .AddScoped<ILibraryRepository, LibraryRepository>()
                 .AddScoped<ILoginService, LoginService>()
-                .AddScoped<IUsuarioRepository, UsuarioRepository>();
+                .AddScoped<IClienteRepository, ClienteRepository>();
         }
 
         private static void AddInfraSetup(IServiceCollection services)
