@@ -6,6 +6,7 @@ using Estudos.Data.Repositories;
 using Estudos.Domain.Interfaces;
 using Estudos.Application.Produto;
 using Estudos.Application.Login;
+using Estudos.Application.Services;
 
 namespace Estudos.CrossCutting
 {
@@ -24,12 +25,16 @@ namespace Estudos.CrossCutting
         {
             services
                 .AddScoped<ILibraryService, LibraryService>()
-                .AddScoped<ILoginService, LoginService>();
+                .AddScoped<ILoginService, LoginService>()
+                .AddScoped<IClienteService, ClienteService>();
         }
 
         private static void AddDomainSetup(this IServiceCollection services)
         {
-            services.AddScoped<ILibraryRepository, LibraryRepository>();
+            services
+                .AddScoped<ILibraryRepository, LibraryRepository>()
+                .AddScoped<ILoginService, LoginService>()
+                .AddScoped<IClienteRepository, ClienteRepository>();
         }
 
         private static void AddInfraSetup(IServiceCollection services)
