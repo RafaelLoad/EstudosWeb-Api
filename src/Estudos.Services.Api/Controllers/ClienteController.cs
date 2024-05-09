@@ -1,5 +1,6 @@
 ﻿using Estudos.Application.Interfaces;
 using Estudos.Domain.Entities;
+using Estudos.Domain.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Estudos.Services.Api.Controllers
@@ -15,15 +16,19 @@ namespace Estudos.Services.Api.Controllers
         }
 
         [HttpPost("Adicionar")]
-        public async Task<IActionResult> Add(Cliente cliente)
+        public async Task<IActionResult> Add(Cliente cliente) 
+            => Ok(await _clienteService.Add(cliente));
+
+        [HttpPut("Atualizar/{id}")]
+        public async Task<IActionResult> Update(Cliente cliente, int id)
         {
-            return Ok( await _clienteService.Add(cliente));
+            return Ok(await _clienteService.Update(cliente, id));
         }
 
-        [HttpPut("Atualizar")]
-        public async Task<IActionResult> Update(Cliente cliente)
+        [HttpGet("BuscarPorId/{id}")]
+        public async Task<IActionResult> GetById(int id, bool getDependencies = false)
         {
-            return Ok(await _clienteService.Atualizar(cliente));
+            return Ok(await _clienteService.GetById(id, getDependencies));
         }
 
         [HttpGet("BuscarTodos")]
@@ -32,7 +37,7 @@ namespace Estudos.Services.Api.Controllers
             return Ok(await _clienteService.GetAll());
         }
 
-        [HttpDelete("Remover")]
+        [HttpDelete("Remover/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             return Ok(await _clienteService.Delete(id));

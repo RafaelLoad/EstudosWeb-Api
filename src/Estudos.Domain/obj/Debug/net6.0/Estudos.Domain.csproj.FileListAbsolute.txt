@@ -12,6 +12,7 @@ C:\Users\fh167\Documents\Estudos\src\Estudos.Domain\obj\Debug\net6.0\ref\Estudos
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Domain\bin\Debug\net6.0\Estudos.Domain.deps.json
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Domain\bin\Debug\net6.0\Estudos.Domain.dll
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Domain\bin\Debug\net6.0\Estudos.Domain.pdb
+C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Domain\obj\Debug\net6.0\Estudos.Domain.csproj.AssemblyReference.cache
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Domain\obj\Debug\net6.0\Estudos.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Domain\obj\Debug\net6.0\Estudos.Domain.AssemblyInfoInputs.cache
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Domain\obj\Debug\net6.0\Estudos.Domain.AssemblyInfo.cs

@@ -1,4 +1,5 @@
-﻿using Estudos.Domain.Interfaces;
+﻿using Estudos.Domain.Entities;
+using Estudos.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Estudos.Data.Repositories
@@ -14,31 +15,25 @@ namespace Estudos.Data.Repositories
         {
             _context = context;
             _dbSet = context.Set<TEntity>();
-
         }
 
         public async Task<bool> Add(TEntity obj)
         {
-            _dbSet.Add(obj);
+            _dbSet.AddAsync(obj);
             return true;
         }
 
-        public async Task<TEntity> GetById(int id)
-        {
-            return await _dbSet.FindAsync(id);
-        }
-
-        public async Task<TEntity> Alter(TEntity obj)
+        public async Task<bool> Update(TEntity obj)
         {
             _dbSet.Update(obj);
-            return obj; 
+            return true;
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task<bool> Delete(TEntity entity)
         {
-            var entity =  await GetById(id);
             _dbSet.Remove(entity);
             return true;
         }
+
     }
 }

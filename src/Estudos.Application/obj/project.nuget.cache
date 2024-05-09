@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2xB3K/a/mddoyH8ndOzLJzty0OwxXr1UO4OGYEY6YyoUfcemCmVc4gUwIzGwMn1harq3WD9xDR/jKtHXwvw4Vg==",
+  "dgSpecHash": "PUL88TxqHSskOIIfJ8YfYbwaN7uN2Esg5e+WNSGBKVL+p7gHbsbBUmW6cc4cRgS96AicnLj1ywLO3VNuJt5hEQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.29\\microsoft.data.sqlite.core.6.0.29.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.29\\microsoft.entityframeworkcore.6.0.29.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.29\\microsoft.entityframeworkcore.abstractions.6.0.29.nupkg.sha512",

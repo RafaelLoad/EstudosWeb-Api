@@ -100,6 +100,7 @@ C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Services.Api\bin\Debug\net6.
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Services.Api\bin\Debug\net6.0\Estudos.Services.Api.runtimeconfig.json
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Services.Api\bin\Debug\net6.0\Estudos.Services.Api.dll
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Services.Api\bin\Debug\net6.0\Estudos.Services.Api.pdb
+C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Services.Api\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Services.Api\bin\Debug\net6.0\Humanizer.dll
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Services.Api\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
 C:\Users\55119\Documents\GitHub\Estudos\src\Estudos.Services.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll

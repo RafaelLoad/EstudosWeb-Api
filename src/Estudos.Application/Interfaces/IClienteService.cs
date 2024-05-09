@@ -1,17 +1,14 @@
 ﻿using Estudos.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Estudos.Domain.ViewModel;
 
 namespace Estudos.Application.Interfaces
 {
     public interface IClienteService
     {
-        Task<Cliente> Add(Cliente cliente);
+        Task<bool> Add(Cliente cliente);
         Task<IEnumerable<Cliente>> GetAll();
-        Task<Cliente> Atualizar(Cliente cliente);
-        Task<bool> Delete(int id);
+        Task<Cliente> GetById(int id, bool getDependencies = false);
+        Task<Tuple<bool, string>> Update(Cliente cliente, int id);
+        Task<Tuple<bool, string>>  Delete(int id);
     }
 }

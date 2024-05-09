@@ -11,8 +11,7 @@ namespace Estudos.Domain.Interfaces
     public interface ICrudRepository<TEntity>
     {
         Task<bool> Add(TEntity obj);
-        Task<TEntity> Alter(TEntity obj);
-        Task<TEntity> GetById(int obj);
-        Task<bool> Delete(int obj);
+        Task<bool> Update(TEntity obj);
+        Task<bool> Delete(TEntity entity);
     }
 }
