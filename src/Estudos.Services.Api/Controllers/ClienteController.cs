@@ -37,9 +37,9 @@ namespace Estudos.Services.Api.Controllers
         }
 
         [HttpDelete("Remover/{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id, int? idEndereco, int? idContato)
         {
-            return Ok(await _clienteService.Delete(id));
+            return Ok(await _clienteService.Delete(id, idEndereco, idContato));
         }
     }
 }

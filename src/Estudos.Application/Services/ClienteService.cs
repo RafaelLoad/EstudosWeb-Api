@@ -79,22 +79,53 @@ namespace Estudos.Application.Services
             }
 
             _clienteRepository.Update(dbResult);
-             _context.SaveChanges();
+            _context.SaveChanges();
 
             return new Tuple<bool, string>(true, "Atualizado com Sucesso!");
         }
-        public async Task<Tuple<bool, string>> Delete(int id)
+        public async Task<Tuple<bool, string>> Delete(int id, int? idEndereco, int? idContato)
         {
-            var cliente =  _clienteRepository.GetById(id);
+            var cliente = _clienteRepository.GetById(id, true);
 
             if (cliente is null)
             {
                 return new Tuple<bool, string>(false, "Cliente não existente");
             }
+
+            if (idEndereco.HasValue)
+            {
+                var endereco = cliente.Endereco;
+                if (endereco.Id.Equals(idEndereco))
+                {
+                    _context.Remove(endereco);
+                    _context.SaveChanges();
+                    return new Tuple<bool, string>(true, "Endereço removido com sucesso!");
+                }
+                else
+                {
+                    return new Tuple<bool, string>(false, "Endereço não existente");
+                }
+            }
+
+            if (idContato.HasValue)
+            {
+                var contato = cliente.Contato.FirstOrDefault(x => x.Id == idContato);
+                if (contato != null)
+                {
+                    _context.Remove(contato);
+                    _context.SaveChanges();
+                    return new Tuple<bool, string>(true, "Contato removido com sucesso!");
+                }
+                else
+                {
+                    return new Tuple<bool, string>(false, "Contato não existente");
+                }
+            }
+
             _clienteRepository.Delete(cliente);
             _context.SaveChanges();
 
-            return new Tuple<bool, string>(true, "Removido com sucesso!"); ;
+            return new Tuple<bool, string>(true, "Cliente removido com sucesso!");
         }
     }
 }

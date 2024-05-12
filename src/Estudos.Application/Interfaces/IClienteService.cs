@@ -8,6 +8,6 @@ namespace Estudos.Application.Interfaces
         Task<IEnumerable<Cliente>> GetAll(string? nome, string? cpf, string? email);
         Task<Cliente> GetById(int id, bool getDependencies = false);
         Task<Tuple<bool, string>> Update(Cliente cliente, int id);
-        Task<Tuple<bool, string>>  Delete(int id);
+        Task<Tuple<bool, string>>  Delete(int id, int? idEndereco, int? idContato);
     }
 }
