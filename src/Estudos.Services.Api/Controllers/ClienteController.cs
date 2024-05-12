@@ -1,6 +1,5 @@
 ﻿using Estudos.Application.Interfaces;
 using Estudos.Domain.Entities;
-using Estudos.Domain.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Estudos.Services.Api.Controllers
@@ -32,9 +31,9 @@ namespace Estudos.Services.Api.Controllers
         }
 
         [HttpGet("BuscarTodos")]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(string? nome, string? cpf, string? email)
         {
-            return Ok(await _clienteService.GetAll());
+            return Ok(await _clienteService.GetAll(nome, cpf, email));
         }
 
         [HttpDelete("Remover/{id}")]

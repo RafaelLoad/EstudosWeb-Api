@@ -7,36 +7,12 @@
       "RelativeMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|solutionrelative:src\\estudos.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.data\\repositories\\crudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|solutionrelative:src\\estudos.data\\repositories\\crudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.domain\\interfaces\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|solutionrelative:src\\estudos.domain\\interfaces\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.data\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|solutionrelative:src\\estudos.data\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.domain\\interfaces\\icrudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|solutionrelative:src\\estudos.domain\\interfaces\\icrudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.application\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|solutionrelative:src\\estudos.application\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.domain\\interfaces\\ilibraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|solutionrelative:src\\estudos.domain\\interfaces\\ilibraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.data\\repositories\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|solutionrelative:src\\estudos.data\\repositories\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,97 +22,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ILibraryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Interfaces\\ILibraryRepository.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Domain\\Interfaces\\ILibraryRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Interfaces\\ILibraryRepository.cs",
-              "RelativeToolTip": "src\\Estudos.Domain\\Interfaces\\ILibraryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T00:16:37.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "IClienteService.cs",
               "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Interfaces\\IClienteService.cs",
               "RelativeDocumentMoniker": "src\\Estudos.Application\\Interfaces\\IClienteService.cs",
               "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Interfaces\\IClienteService.cs",
               "RelativeToolTip": "src\\Estudos.Application\\Interfaces\\IClienteService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T00:07:44.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICrudRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Interfaces\\ICrudRepository.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Domain\\Interfaces\\ICrudRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Interfaces\\ICrudRepository.cs",
-              "RelativeToolTip": "src\\Estudos.Domain\\Interfaces\\ICrudRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T23:30:05.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LibraryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Repositories\\LibraryRepository.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Data\\Repositories\\LibraryRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Repositories\\LibraryRepository.cs",
-              "RelativeToolTip": "src\\Estudos.Data\\Repositories\\LibraryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T23:25:40.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CrudRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Repositories\\CrudRepository.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Data\\Repositories\\CrudRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Repositories\\CrudRepository.cs",
-              "RelativeToolTip": "src\\Estudos.Data\\Repositories\\CrudRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAqwBkAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T23:05:29.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IClienteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Interfaces\\IClienteRepository.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Domain\\Interfaces\\IClienteRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Interfaces\\IClienteRepository.cs",
-              "RelativeToolTip": "src\\Estudos.Domain\\Interfaces\\IClienteRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:21:15.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClienteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
-              "RelativeToolTip": "src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:20:45.914Z",
+              "WhenOpened": "2024-05-12T21:51:04.957Z",
               "EditorCaption": ""
             },
             {
@@ -147,9 +45,9 @@
               "RelativeDocumentMoniker": "src\\Estudos.Application\\Services\\ClienteService.cs",
               "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Services\\ClienteService.cs",
               "RelativeToolTip": "src\\Estudos.Application\\Services\\ClienteService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAwwCAAAAAhAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAiwC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:13:22.39Z",
+              "WhenOpened": "2024-05-12T21:44:41.072Z",
               "EditorCaption": ""
             },
             {
@@ -160,9 +58,9 @@
               "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
               "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAewBcAAAAIAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAvwCQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:12:43.926Z",
+              "WhenOpened": "2024-05-12T21:35:34.835Z",
               "EditorCaption": ""
             }
           ]

@@ -1,7 +1,6 @@
 ﻿using Estudos.Application.Interfaces;
 using Estudos.Domain.Entities;
 using Estudos.Domain.Interfaces;
-using Estudos.Domain.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -24,20 +23,25 @@ namespace Estudos.Application.Services
 
         public async Task<bool> Add(Cliente cliente)
         {
-             var result = await _clienteRepository.Add(cliente);
-            await _context.SaveChangesAsync();
+             var result =  _clienteRepository.Add(cliente);
+            _context.SaveChanges();
             return result;
 
         }
 
         public async Task<Cliente> GetById(int id, bool getDependencies = false)
         {
-            return await _clienteRepository.GetById(id, getDependencies);
+            return  _clienteRepository.GetById(id, getDependencies);
         }
 
-        public async Task<IEnumerable<Cliente>> GetAll()
+        public async Task<IEnumerable<Cliente>> GetAll(string? nome, string? cpf, string? email)
         {
-            return await _clienteRepository.GetAll();
+            return _clienteRepository.GetAll()
+                .Where(c =>
+                    (string.IsNullOrEmpty(nome) || c.Nome.Contains(nome)) &&
+                    (string.IsNullOrEmpty(email) || c.Email.Contains(email)) &&
+                    (string.IsNullOrEmpty(cpf) || c.CPF == cpf))
+                .ToList();
         }
 
         public async Task<Tuple<bool, string>> Update(Cliente cliente, int id)
@@ -74,21 +78,21 @@ namespace Estudos.Application.Services
                 }
             }
 
-            await _clienteRepository.Update(dbResult);
-            await _context.SaveChangesAsync();
+            _clienteRepository.Update(dbResult);
+             _context.SaveChanges();
 
             return new Tuple<bool, string>(true, "Atualizado com Sucesso!");
         }
         public async Task<Tuple<bool, string>> Delete(int id)
         {
-            var cliente = await _clienteRepository.GetById(id);
+            var cliente =  _clienteRepository.GetById(id);
 
             if (cliente is null)
             {
                 return new Tuple<bool, string>(false, "Cliente não existente");
             }
-            await _clienteRepository.Delete(cliente);
-            await _context.SaveChangesAsync();
+            _clienteRepository.Delete(cliente);
+            _context.SaveChanges();
 
             return new Tuple<bool, string>(true, "Removido com sucesso!"); ;
         }

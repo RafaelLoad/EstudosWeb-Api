@@ -34,12 +34,12 @@ builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
     //if (env.EnvironmentName == "inMemoryDb")
         options.UseInMemoryDatabase("Estudos");
 
-    //else//if (env.EnvironmentName == "Sqlite")
-    //options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"),
-    //        b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
+    //else if (env.EnvironmentName == "Sqlite")
+    //    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"),
+    //            b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
 
-        //else
-        //options.UseNpgsql(configuration["ConnectionStrings:DefaultConnection"], o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery));
+    //else
+    //    options.UseNpgsql(configuration["ConnectionStrings:DefaultConnection"], o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery));
 });
 
 

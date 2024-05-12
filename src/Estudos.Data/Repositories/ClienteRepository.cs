@@ -14,17 +14,17 @@ namespace Estudos.Data.Repositories
             _dbContext = context;
             _cliente = context.Set<Cliente>();
         }
-        public async Task<Cliente> GetById(int id, bool getDependencies = false)
+        public Cliente GetById(int id, bool getDependencies = false)
         {
             if (getDependencies)
-                return await _cliente.Include(c => c.Endereco).Include(c => c.Contato).FirstOrDefaultAsync(x => x.Id == id);
+                return  _cliente.Include(c => c.Endereco).Include(c => c.Contato).FirstOrDefault(x => x.Id == id);
 
-            return await _cliente.FindAsync(id);
+            return  _cliente.Find(id);
         }
 
-        public async Task<IEnumerable<Cliente>> GetAll()
+        public IEnumerable<Cliente> GetAll()
         {
-            return await _cliente.Include(c => c.Endereco).Include(c => c.Contato).ToListAsync();
+            return  _cliente.Include(c => c.Endereco).Include(c => c.Contato).ToList();
         }
 
     }

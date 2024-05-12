@@ -17,19 +17,19 @@ namespace Estudos.Data.Repositories
             _dbSet = context.Set<TEntity>();
         }
 
-        public async Task<bool> Add(TEntity obj)
+        public bool Add(TEntity obj)
         {
-            _dbSet.AddAsync(obj);
+            _dbSet.Add(obj);
             return true;
         }
 
-        public async Task<bool> Update(TEntity obj)
+        public bool Update(TEntity obj)
         {
             _dbSet.Update(obj);
             return true;
         }
 
-        public async Task<bool> Delete(TEntity entity)
+        public bool Delete(TEntity entity)
         {
             _dbSet.Remove(entity);
             return true;
