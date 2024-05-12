@@ -458,3 +458,6 @@ src/Estudos.Application/bin/Debug/net6.0/Estudos.Application.dll
 *.exe
 *.json
 *.cache
+*.dll
+/src/Estudos.Application/bin
+/src/Estudos.Application/obj
