@@ -456,3 +456,5 @@ src/Estudos.Application/bin/Debug/net6.0/Estudos.Application.dll
 *.dll
 *.pdb
 *.exe
+*.json
+*.cache

@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Estudos.Data.Context;
 using Estudos.Data.Repositories;
 using Estudos.Domain.Interfaces;
-using Estudos.Application.Produto;
 using Estudos.Application.Login;
 using Estudos.Application.Services;
 
@@ -24,7 +23,6 @@ namespace Estudos.CrossCutting
         private static void AddApplicationSetup(this IServiceCollection services)
         {
             services
-                .AddScoped<ILibraryService, LibraryService>()
                 .AddScoped<ILoginService, LoginService>()
                 .AddScoped<IClienteService, ClienteService>();
         }
@@ -32,7 +30,6 @@ namespace Estudos.CrossCutting
         private static void AddDomainSetup(this IServiceCollection services)
         {
             services
-                .AddScoped<ILibraryRepository, LibraryRepository>()
                 .AddScoped<ILoginService, LoginService>()
                 .AddScoped<IClienteRepository, ClienteRepository>();
         }

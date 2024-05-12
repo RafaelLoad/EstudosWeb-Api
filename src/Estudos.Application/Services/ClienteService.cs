@@ -1,6 +1,7 @@
 ﻿using Estudos.Application.Interfaces;
 using Estudos.Domain.Entities;
 using Estudos.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Estudos.Application.Services
@@ -8,33 +9,123 @@ namespace Estudos.Application.Services
     public class ClienteService : IClienteService
     {
         private readonly IClienteRepository _clienteRepository;
+        private readonly DbContext _context;
 
-        public ClienteService(IClienteRepository usuarioRepository)
+        public ClienteService
+        (
+            IClienteRepository usuarioRepository,
+            DbContext context
+        )
         {
             _clienteRepository = usuarioRepository;
-        }
-        public async Task<Cliente> Add(Cliente cliente)
-        {
-            var retorno = await _clienteRepository.Add(cliente);
-            return retorno;
+            _context = context;
         }
 
-
-        public async Task<IEnumerable<Cliente>> GetAll()
+        public async Task<bool> Add(Cliente cliente)
         {
-            var retorno = await _clienteRepository.GetAll();
-            return retorno;
+             var result =  _clienteRepository.Add(cliente);
+            _context.SaveChanges();
+            return result;
+
         }
 
-        public Task<Cliente> Atualizar(Cliente cliente)
+        public async Task<Cliente> GetById(int id, bool getDependencies = false)
         {
-            var retorno = _clienteRepository.Atualizar(cliente);
-            return retorno;
+            return  _clienteRepository.GetById(id, getDependencies);
         }
-        public Task<bool> Delete(int id)
+
+        public async Task<IEnumerable<Cliente>> GetAll(string? nome, string? cpf, string? email)
         {
-            var retorno = _clienteRepository.Delete(id);
-            return retorno;
+            return _clienteRepository.GetAll()
+                .Where(c =>
+                    (string.IsNullOrEmpty(nome) || c.Nome.Contains(nome)) &&
+                    (string.IsNullOrEmpty(email) || c.Email.Contains(email)) &&
+                    (string.IsNullOrEmpty(cpf) || c.CPF == cpf))
+                .ToList();
+        }
+
+        public async Task<Tuple<bool, string>> Update(Cliente cliente, int id)
+        {
+            var dbResult = await GetById(id, true);
+            if (dbResult == null)
+            {
+                return new Tuple<bool, string>(false, "Cliente não existente");
+            }
+
+            dbResult.IdEndereco = cliente.IdEndereco;
+            dbResult.Nome = cliente.Nome;
+            dbResult.Email = cliente.Email;
+            dbResult.CPF = cliente.CPF;
+            dbResult.RG = cliente.RG;
+            dbResult.Endereco.Tipo = cliente.Endereco.Tipo;
+            dbResult.Endereco.CEP = cliente.Endereco.CEP;
+            dbResult.Endereco.Logradouro = cliente.Endereco.Logradouro;
+            dbResult.Endereco.Numero = cliente.Endereco.Numero;
+            dbResult.Endereco.Bairro = cliente.Endereco.Bairro;
+            dbResult.Endereco.Complemento = cliente.Endereco.Complemento;
+            dbResult.Endereco.Cidade = cliente.Endereco.Cidade;
+            dbResult.Endereco.Estado = cliente.Endereco.Estado;
+            dbResult.Endereco.Referencia = cliente.Endereco.Referencia;
+
+            foreach (var contato in cliente.Contato)
+            {
+                var dbContato = dbResult.Contato.FirstOrDefault(c => c.Id == contato.Id);
+                if (dbContato != null)
+                {
+                    dbContato.Tipo = contato.Tipo;
+                    dbContato.DDD = contato.DDD;
+                    dbContato.Telefone = contato.Telefone;
+                }
+            }
+
+            _clienteRepository.Update(dbResult);
+            _context.SaveChanges();
+
+            return new Tuple<bool, string>(true, "Atualizado com Sucesso!");
+        }
+        public async Task<Tuple<bool, string>> Delete(int id, int? idEndereco, int? idContato)
+        {
+            var cliente = _clienteRepository.GetById(id, true);
+
+            if (cliente is null)
+            {
+                return new Tuple<bool, string>(false, "Cliente não existente");
+            }
+
+            if (idEndereco.HasValue)
+            {
+                var endereco = cliente.Endereco;
+                if (endereco.Id.Equals(idEndereco))
+                {
+                    _context.Remove(endereco);
+                    _context.SaveChanges();
+                    return new Tuple<bool, string>(true, "Endereço removido com sucesso!");
+                }
+                else
+                {
+                    return new Tuple<bool, string>(false, "Endereço não existente");
+                }
+            }
+
+            if (idContato.HasValue)
+            {
+                var contato = cliente.Contato.FirstOrDefault(x => x.Id == idContato);
+                if (contato != null)
+                {
+                    _context.Remove(contato);
+                    _context.SaveChanges();
+                    return new Tuple<bool, string>(true, "Contato removido com sucesso!");
+                }
+                else
+                {
+                    return new Tuple<bool, string>(false, "Contato não existente");
+                }
+            }
+
+            _clienteRepository.Delete(cliente);
+            _context.SaveChanges();
+
+            return new Tuple<bool, string>(true, "Cliente removido com sucesso!");
         }
     }
 }

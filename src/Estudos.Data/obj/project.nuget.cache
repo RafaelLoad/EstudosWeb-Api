@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lFbpPOtcIpM4EatSpf1GFmkd5J4uGB6ZPcDQYVoDpXYnJ0v+YyeFY+5alEybqna4rArO9S3D8XD+QsgON+lifA==",
+  "dgSpecHash": "MZuaRH18XYcxHRwvi79iJGMumq7fEUstQUnCPCda1FCE/HDo2JX+uZ3yDu4gIdK4lInycmddqhNZNB/DkQV0Hw==",
   "success": true,
   "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.29\\microsoft.data.sqlite.core.6.0.29.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.29\\microsoft.entityframeworkcore.6.0.29.nupkg.sha512",

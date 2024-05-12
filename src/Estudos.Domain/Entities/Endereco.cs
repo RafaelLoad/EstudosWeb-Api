@@ -1,10 +1,11 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Estudos.Domain.Entities
 {
-    public class Endereco
+    public class Endereco 
     {
-        public int Id {  get; set; }
+        public int Id { get; set; }
         public string Tipo { get; set; }
         public string CEP { get; set; }
         public string Logradouro { get; set; }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yacrb9gAn35RW96ggnD+GMdeGPj3WcyFs71Yy5O77TV7QeQJbt5TBlz0MgdCJOBgFiO4uR8xjwuBaiw8lau1rA==",
+  "dgSpecHash": "3SMWgMoITtkbfTD2W1/ma/ieg8rHQ1fDSuedmpbLFf8YNf9Bg5D8FRuQkg57u3z5D9YhbICRPkIV1elR4JEv8A==",
   "success": true,
   "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.29\\microsoft.data.sqlite.core.6.0.29.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.29\\microsoft.entityframeworkcore.6.0.29.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.29\\microsoft.entityframeworkcore.abstractions.6.0.29.nupkg.sha512",

@@ -2,11 +2,9 @@
 
 namespace Estudos.Domain.Interfaces
 {
-    public interface IClienteRepository
+    public interface IClienteRepository : ICrudRepository<Cliente>
     {
-        Task<Cliente> Add(Cliente cliente);
-        Task<IEnumerable<Cliente>> GetAll();
-        Task<Cliente> Atualizar(Cliente cliente);
-        Task<bool> Delete(int id);
+        IEnumerable<Cliente> GetAll();
+        Cliente GetById(int id, bool getDependencies = false);
     }
 }
