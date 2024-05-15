@@ -29,9 +29,10 @@ Data: Diretório contendo a camada de acesso a dados, incluindo o DbContext e as
     json
     Copiar código
     {
-    "ConnectionStrings": {
+     "ConnectionStrings":
+      {
         "DefaultConnection": "Server=your_server;Database=your_database;User Id=your_username;Password=your_password;"
-    }
+      }
     }
 #Execute as migrações para criar o banco de dados:
 
