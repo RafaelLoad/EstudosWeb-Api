@@ -31,6 +31,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDependencies();
+builder.Services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ClienteValidator>());
 
 builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
 {
@@ -42,10 +43,6 @@ builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
                      b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
 
 });
-
-
-
-
 
 var app = builder.Build();
 

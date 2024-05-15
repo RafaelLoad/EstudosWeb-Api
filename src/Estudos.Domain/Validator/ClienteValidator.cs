@@ -17,8 +17,8 @@ namespace Estudos.Domain.Validator
 
             RuleForEach(x => x.Contato).ChildRules(contato => {
 
-                contato.RuleFor(x => x.Telefone).NotEmpty().WithMessage("Telefone é obrigatório").Equal(9);
-                contato.RuleFor(x => x.DDD).NotEmpty().WithMessage("DDD é obrigatório").Equal(2);
+                contato.RuleFor(x => x.Telefone).NotEmpty().WithMessage("Telefone é obrigatório").GreaterThan(9);
+                contato.RuleFor(x => x.DDD).NotEmpty().WithMessage("DDD é obrigatório").GreaterThan(2);
                 contato.RuleFor(x => x.Tipo).NotEmpty().WithMessage("O campo tipo é obrigatório");
             });
 

@@ -6,9 +6,6 @@ using Estudos.Data.Repositories;
 using Estudos.Domain.Interfaces;
 using Estudos.Application.Login;
 using Estudos.Application.Services;
-using FluentValidation;
-using System;
-using Estudos.Domain.Entities;
 using Estudos.Domain.Validator;
 using FluentValidation.AspNetCore;
 
@@ -42,9 +39,8 @@ namespace Estudos.CrossCutting
 
         private static void AddAValidationSetup(this IServiceCollection services)
         {
-
-            services.AddValidatorsFromAssemblyContaining<ClienteValidator>();
-            services.AddScoped<IValidator<Cliente>, ClienteValidator>(); /*AddFluentValidation(typeof(ClienteValidator));*/
+            services
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ClienteValidator>());
         } 
 
         private static void AddInfraSetup(IServiceCollection services)
