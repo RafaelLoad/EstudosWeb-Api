@@ -16,7 +16,7 @@ namespace Estudos.Data.Context
         }
 
     
-        public DbSet<Cliente> Users { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

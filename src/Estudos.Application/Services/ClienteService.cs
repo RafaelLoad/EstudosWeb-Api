@@ -52,7 +52,6 @@ namespace Estudos.Application.Services
                 return new Tuple<bool, string>(false, "Cliente não existente");
             }
 
-            dbResult.IdEndereco = cliente.IdEndereco;
             dbResult.Nome = cliente.Nome;
             dbResult.Email = cliente.Email;
             dbResult.CPF = cliente.CPF;

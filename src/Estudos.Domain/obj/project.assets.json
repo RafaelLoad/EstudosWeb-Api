@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Extensions.FluentValidation.Br/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.0.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.Extensions.Br.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.Extensions.Br.dll": {}
+        }
+      },
       "FluentValidation/11.9.1": {
         "type": "package",
         "compile": {
@@ -18,6 +30,18 @@
     }
   },
   "libraries": {
+    "Extensions.FluentValidation.Br/1.0.2": {
+      "sha512": "ZVoXpIFkUhufHoO3/MkdIMZU0+8Mjy1K9TNd0zroT/J92SqU8V/ryZqVn4Mdbeq2aAC5yrtAhowg8Vd+FjSCSw==",
+      "type": "package",
+      "path": "extensions.fluentvalidation.br/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
+        "extensions.fluentvalidation.br.nuspec",
+        "lib/netstandard2.0/FluentValidation.Extensions.Br.dll"
+      ]
+    },
     "FluentValidation/11.9.1": {
       "sha512": "C+PqISSMdlOZZJx0Hx25atW32tv4vbpsaiQB+PLjK+ZGLzOFuHl1fUJ3Lny77mIZ31ZtYtNG0JgUjxa3wwLsWg==",
       "type": "package",
@@ -46,6 +70,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Extensions.FluentValidation.Br >= 1.0.2",
       "FluentValidation >= 11.9.1"
     ]
   },
@@ -93,6 +118,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Extensions.FluentValidation.Br": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "FluentValidation": {
             "target": "Package",
             "version": "[11.9.1, )"
