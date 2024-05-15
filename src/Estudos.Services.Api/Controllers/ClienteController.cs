@@ -1,5 +1,6 @@
 ﻿using Estudos.Application.Interfaces;
 using Estudos.Domain.Entities;
+using Estudos.Domain.Validator;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,11 +21,7 @@ namespace Estudos.Services.Api.Controllers
 
         [HttpPost("Adicionar")]
         public async Task<IActionResult> Add(Cliente cliente)
-        {
-
-            return Ok(await _clienteService.Add(cliente));
-        }
-          
+            => Ok(await _clienteService.Add(cliente));
 
         [HttpPut("Atualizar/{id}")]
         public async Task<IActionResult> Update(Cliente cliente, int id)

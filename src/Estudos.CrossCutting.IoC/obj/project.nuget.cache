@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TqV4fWDJ00SNHH0Ev27tfNAuAoi12K9/6ld1au6YdI5LWkfX1+6n9DUy0HAMq3TfLlyaWB1HMdtvfOQU1R+4dA==",
+  "dgSpecHash": "ZL49EGG3/Ksvrr9bODS2jVTiBFJFz9S6tWsY+Om8Kn2Ip/plhUCErGXQB24qj7TC5wJwqjGdrE1Ivue6/8mHuA==",
   "success": true,
   "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\55119\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
-    "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
+    "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
