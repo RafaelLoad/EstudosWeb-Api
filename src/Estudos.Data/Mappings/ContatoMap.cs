@@ -8,7 +8,10 @@ namespace Estudos.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Contato> builder)
         {
+            builder.ToTable("contato");
+
             builder.HasKey(x => x.Id);
+
             builder.Property(x => x.Id)
                 .HasColumnName("id")
                 .IsRequired();

@@ -1,11 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using Estudos.Domain.Entities;
+using System.Reflection.Emit;
+using System.Reflection.Metadata;
 
 namespace Estudos.Data.Mappings
 {
@@ -33,8 +31,8 @@ namespace Estudos.Data.Mappings
                 .HasColumnName("rg");
 
             builder.HasOne(x => x.Endereco)
-               .WithOne()
-               .HasForeignKey<Endereco>(x => x.Id);
+                .WithOne()
+                .HasForeignKey<Endereco>(e => e.IdCliente);
 
             builder.HasMany(x => x.Contato)
               .WithOne()

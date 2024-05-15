@@ -1,4 +1,5 @@
-﻿using Estudos.Domain.Entities;
+﻿
+using Estudos.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,10 +9,17 @@ namespace Estudos.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Endereco> builder)
         {
+
+            builder.ToTable("endereco");
+
+
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id)
                 .HasColumnName("id")
                 .IsRequired();
+
+            builder.Property(x => x.IdCliente)
+               .HasColumnName("id_cliente");
 
             builder.Property(x => x.Tipo)
                 .HasColumnName("tipo");

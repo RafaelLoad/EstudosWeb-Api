@@ -1,6 +1,9 @@
 using Estudos.CrossCutting;
 using Estudos.CrossCutting.IoC.Settings;
 using Estudos.Data.Context;
+using Estudos.Domain.Entities;
+using Estudos.Domain.Validator;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Serilog;
@@ -31,15 +34,13 @@ builder.Services.AddDependencies();
 
 builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
 {
-    //if (env.EnvironmentName == "inMemoryDb")
+    if (env.EnvironmentName == "inMemoryDb")
         options.UseInMemoryDatabase("Estudos");
 
-    //else if (env.EnvironmentName == "Sqlite")
-    //    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"),
-    //            b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
+    else if (env.EnvironmentName == "Development")
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+                     b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
 
-    //else
-    //    options.UseNpgsql(configuration["ConnectionStrings:DefaultConnection"], o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery));
 });
 
 
@@ -48,19 +49,11 @@ builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
-
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
