@@ -1,35 +1,45 @@
-﻿//using Estudos.Domain.Entities;
-//using Estudos.Domain.ViewModel;
-//using Microsoft.AspNetCore.Mvc;
+﻿using Estudos.Application.Interfaces;
+using Estudos.Domain.Entities;
+using Estudos.Domain.ViewModels;
+using Estudos.Services.Api.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.JsonWebTokens;
+using System.Security.Claims;
 
-//namespace Estudos.Services.Api.Controllers
-//{
-//    [Route("api/[controller]")]
-//    [ApiController]
-//    public class LoginController : ControllerBase
-//    {
-//        public LoginController()
-//        {
-                
-//        }
+namespace Estudos.Services.Api.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class LoginController : Controller
+    {
+        private readonly IUsuarioService _users;
+        private readonly IJwtBearerTokenService _jwtBearerTokenService;
+        public LoginController
+        (
+            IUsuarioService users,
+            IJwtBearerTokenService jwtBearerTokenService
+        )
+        {
+            _users = users;
+            _jwtBearerTokenService = jwtBearerTokenService;
+        }
 
+        [HttpPost("Usuario")]
+        public async Task<IActionResult> Usuario(LoginViewModel login)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
 
-//        [HttpGet("Login")]
-//        public async Task<IActionResult> Login(LoginViewModel login)
-//        {
-//            if(!ModelState.IsValid)
-//            return BadRequest(login);
+            var user = await _users.Get(login);
+            
 
-//            return Ok();
-//        }
+            var claims = new List<Claim>
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Usuario.ToString()),
+                new Claim(ClaimTypes.NameIdentifier,  user.Usuario)
+            };
 
-//        [HttpPost("Criar")]
-//        public async Task<IActionResult> Create(ClienteViewModel user)
-//        {
-//            if (!ModelState.IsValid)
-//                return BadRequest(user);
-
-//            return Ok();
-//        }
-//    }
-//}
+            return Ok(_jwtBearerTokenService.CreateToken(claims));
+        }
+    }
+}
