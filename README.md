@@ -44,11 +44,11 @@ Data: Diretório contendo a camada de acesso a dados, incluindo o DbContext e as
 
 
 #Endpoints da API
-    GET /api/clientes: Retorna a lista de clientes.
-    GET /api/clientes/{id}: Retorna um cliente específico por ID.
-    POST /api/clientes: Cria um novo cliente.
-    PUT /api/clientes/{id}: Atualiza um cliente existente.
-    DELETE /api/clientes/{id}: Exclui um cliente.
+ -  GET /api/clientes: Retorna a lista de clientes.
+ -  GET /api/clientes/{id}: Retorna um cliente específico por ID.
+ -   POST /api/clientes: Cria um novo cliente.
+ -   PUT /api/clientes/{id}: Atualiza um cliente existente.
+ -  DELETE /api/clientes/{id}: Exclui um cliente.
 
 
     #Se precisar de ajustes ou de mais alguma informação no README, é só avisar!
