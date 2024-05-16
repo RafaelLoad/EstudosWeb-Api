@@ -36,7 +36,7 @@ Este projeto é uma aplicação CRUD (Create, Read, Update, Delete) para gerenci
     }
 # Execute as migrações para criar o banco de dados:
 
- -  visual studio ou vscode
+ -  visual studio (2022) ou vscode
  - abra o package manager console
  - execute os seguintes comnados
  - add-migration InitialMigration
