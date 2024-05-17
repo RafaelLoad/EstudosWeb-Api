@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Estudos.Services.Api.Controllers
 {
     [Route("api/[controller]")]
+    [AllowAnonymous]
     [Authorize]
     [ApiController]
     public class ClienteController : Controller

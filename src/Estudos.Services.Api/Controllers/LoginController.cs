@@ -31,13 +31,14 @@ namespace Estudos.Services.Api.Controllers
                 return BadRequest();
 
             var user = await _users.Get(login);
-            
+
 
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Usuario.ToString()),
-                new Claim(ClaimTypes.NameIdentifier,  user.Usuario)
+                new Claim(ClaimTypes.NameIdentifier, user.Usuario)
             };
+
 
             return Ok(_jwtBearerTokenService.CreateToken(claims));
         }

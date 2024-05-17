@@ -1,19 +1,14 @@
 using Estudos.CrossCutting;
 using Estudos.CrossCutting.IoC.Settings;
 using Estudos.Data.Context;
-using Estudos.Domain.Entities;
 using Estudos.Domain.Validator;
 using Estudos.Services.Api.Services;
-using Estudos.Services.Config;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using System.Reflection;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,6 +40,8 @@ builder.Services.AddSingleton<IJwtBearerTokenService, JwtBearerTokenService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDependencies();
+builder.Services.AddAuthorization();
+
 builder.Services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ClienteValidator>());
 
 builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
@@ -104,6 +101,7 @@ builder.Services.AddAuthentication(options =>
     x.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateAudience = true,
+        ValidAudience = jwtOptions.Issuer,
         ValidateIssuer = true,
         ValidIssuer = jwtOptions.Issuer,
         ValidateLifetime = true,
@@ -124,7 +122,9 @@ app.UseSwaggerUI(c =>
 });
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();
