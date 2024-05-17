@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Estudos.Domain.Entities
 {
-    public class Login
+    public class User
     {
         public int Id { get; set; }
-        public string User { get; set; }
+        public string Usuario { get; set; }
         public string Password { get; set; }
     }
 }

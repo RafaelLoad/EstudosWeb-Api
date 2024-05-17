@@ -2,11 +2,14 @@
 using Estudos.Domain.Entities;
 using Estudos.Domain.Validator;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Estudos.Services.Api.Controllers
 {
     [Route("api/[controller]")]
+    [AllowAnonymous]
+    [Authorize]
     [ApiController]
     public class ClienteController : Controller
     {

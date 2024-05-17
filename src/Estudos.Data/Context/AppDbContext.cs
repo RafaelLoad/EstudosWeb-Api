@@ -17,14 +17,17 @@ namespace Estudos.Data.Context
 
     
         public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Endereco> Endereco { get; set; }
+        public DbSet<Contato> Contato { get; set; }
+        public DbSet<User> Usuario { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ClienteMap());
             modelBuilder.ApplyConfiguration(new ContatoMap());
             modelBuilder.ApplyConfiguration(new EnderecoMap());
-
-            //base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
         }
     }
 }

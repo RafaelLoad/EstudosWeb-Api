@@ -152,6 +152,30 @@ namespace Estudos.Data.Migrations
                     b.ToTable("endereco", (string)null);
                 });
 
+            modelBuilder.Entity("Estudos.Domain.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("password");
+
+                    b.Property<string>("Usuario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("usuario");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("usuario", (string)null);
+                });
+
             modelBuilder.Entity("Estudos.Domain.Entities.Contato", b =>
                 {
                     b.HasOne("Estudos.Domain.Entities.Cliente", null)

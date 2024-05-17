@@ -26,14 +26,14 @@ namespace Estudos.CrossCutting
         private static void AddApplicationSetup(this IServiceCollection services)
         {
             services
-                .AddScoped<ILoginService, LoginService>()
+                .AddScoped<IUsuarioService, UsuarioService>()
                 .AddScoped<IClienteService, ClienteService>();
         }
 
         private static void AddDomainSetup(this IServiceCollection services)
         {
             services
-                .AddScoped<ILoginService, LoginService>()
+                .AddScoped<IUsuarioRepository, UsuarioRepository>()
                 .AddScoped<IClienteRepository, ClienteRepository>();
         }
 
