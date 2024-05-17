@@ -1,4 +1,4 @@
-# CRUD de Cliente
+# CRUD de Cliente/Estudos
 
 Este projeto é uma aplicação CRUD (Create, Read, Update, Delete) para gerenciar clientes, com uma interface web que consome  API.
 
