@@ -11,6 +11,9 @@ Este projeto é uma aplicação CRUD (Create, Read, Update, Delete) para gerenci
 - HTML/₢SS: Interface web para interação com o usuário.
 - Dependency Injection: Gerenciamento de dependências.
 - EntityFrameworkCore: Mapeamento entre objetos.
+- FluentValidation
+- JWT (autenticação)
+- EF Migration
 
 # Estrutura do Projeto
 
