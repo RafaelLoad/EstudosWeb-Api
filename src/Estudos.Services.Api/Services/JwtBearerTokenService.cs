@@ -14,7 +14,7 @@ namespace Estudos.Services.Api.Services
         {
             _options = options.Value;
         }
-        public string CreateToken(List<Claim> claims)
+        public string CriarToken(List<Claim> claims)
         {
             SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
             {

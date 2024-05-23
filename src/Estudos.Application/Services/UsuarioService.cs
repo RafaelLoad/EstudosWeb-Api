@@ -22,7 +22,7 @@ namespace Estudos.Application.Login
             _usuario = usuario;
             _context = context;
         }
-        public async Task<User> Get(LoginViewModel login)
+        public async Task<User> Buscar(LoginViewModel login)
         {
             var user = _usuario.Get(login.Usuario);
 
@@ -33,7 +33,7 @@ namespace Estudos.Application.Login
                     Usuario = login.Usuario,
                     Password = login.Senha
                 };
-                _usuario.Add(novoUsuario);
+                _usuario.Adicionar(novoUsuario);
                 _context.SaveChanges();
 
                 return novoUsuario;
