@@ -21,22 +21,22 @@ namespace Estudos.Application.Services
             _context = context;
         }
 
-        public async Task<bool> Add(Cliente cliente)
+        public async Task<bool> Adicionar(Cliente cliente)
         {
-             var result =  _clienteRepository.Add(cliente);
+             var resultado =  _clienteRepository.Adicionar(cliente);
             _context.SaveChanges();
-            return result;
+            return resultado;
 
         }
 
-        public async Task<Cliente> GetById(int id, bool getDependencies = false)
+        public async Task<Cliente> BuscarPorId(int id, bool getDependencies = false)
         {
-            return  _clienteRepository.GetById(id, getDependencies);
+            return  _clienteRepository.BuscarPorId(id, getDependencies);
         }
 
-        public async Task<IEnumerable<Cliente>> GetAll(string? nome, string? cpf, string? email)
+        public async Task<IEnumerable<Cliente>> BuscarTodos(string? nome, string? cpf, string? email)
         {
-            return _clienteRepository.GetAll()
+            return _clienteRepository.BuscarTodos()
                 .Where(c =>
                     (string.IsNullOrEmpty(nome) || c.Nome.Contains(nome)) &&
                     (string.IsNullOrEmpty(email) || c.Email.Contains(email)) &&
@@ -44,9 +44,9 @@ namespace Estudos.Application.Services
                 .ToList();
         }
 
-        public async Task<Tuple<bool, string>> Update(Cliente cliente, int id)
+        public async Task<Tuple<bool, string>> Atualizar(Cliente cliente, int id)
         {
-            var dbResult = await GetById(id, true);
+            var dbResult = await BuscarPorId(id, true);
             if (dbResult == null)
             {
                 return new Tuple<bool, string>(false, "Cliente não existente");
@@ -77,14 +77,14 @@ namespace Estudos.Application.Services
                 }
             }
 
-            _clienteRepository.Update(dbResult);
+            _clienteRepository.Atualizar(dbResult);
             _context.SaveChanges();
 
             return new Tuple<bool, string>(true, "Atualizado com Sucesso!");
         }
-        public async Task<Tuple<bool, string>> Delete(int id, int? idEndereco, int? idContato)
+        public async Task<Tuple<bool, string>> Deletar(int id, int? idEndereco, int? idContato)
         {
-            var cliente = _clienteRepository.GetById(id, true);
+            var cliente = _clienteRepository.BuscarPorId(id, true);
 
             if (cliente is null)
             {

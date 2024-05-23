@@ -23,31 +23,31 @@ namespace Estudos.Services.Api.Controllers
         }
 
         [HttpPost("Adicionar")]
-        public async Task<IActionResult> Add(Cliente cliente)
-            => Ok(await _clienteService.Add(cliente));
+        public async Task<IActionResult> Adicionar(Cliente cliente)
+            => Ok(await _clienteService.Adicionar(cliente));
 
         [HttpPut("Atualizar/{id}")]
-        public async Task<IActionResult> Update(Cliente cliente, int id)
+        public async Task<IActionResult> Atualizar(Cliente cliente, int id)
         {
-            return Ok(await _clienteService.Update(cliente, id));
+            return Ok(await _clienteService.Atualizar(cliente, id));
         }
 
         [HttpGet("BuscarPorId/{id}")]
-        public async Task<IActionResult> GetById(int id, bool getDependencies = false)
+        public async Task<IActionResult> BuscarPorId(int id, bool getDependencies = false)
         {
-            return Ok(await _clienteService.GetById(id, getDependencies));
+            return Ok(await _clienteService.BuscarPorId(id, getDependencies));
         }
 
         [HttpGet("BuscarTodos")]
-        public async Task<IActionResult> GetAll(string? nome, string? cpf, string? email)
+        public async Task<IActionResult> BuscarTodos(string? nome, string? cpf, string? email)
         {
-            return Ok(await _clienteService.GetAll(nome, cpf, email));
+            return Ok(await _clienteService.BuscarTodos(nome, cpf, email));
         }
 
         [HttpDelete("Remover/{id}")]
-        public async Task<IActionResult> Delete(int id, int? idEndereco, int? idContato)
+        public async Task<IActionResult> Deletar(int id, int? idEndereco, int? idContato)
         {
-            return Ok(await _clienteService.Delete(id, idEndereco, idContato));
+            return Ok(await _clienteService.Deletar(id, idEndereco, idContato));
         }
     }
 }

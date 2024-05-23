@@ -12,35 +12,53 @@ namespace Estudos.Services.Api.Controllers
     [ApiController]
     public class LoginController : Controller
     {
-        private readonly IUsuarioService _users;
+        private readonly IUsuarioService _usuarios;
         private readonly IJwtBearerTokenService _jwtBearerTokenService;
         public LoginController
         (
-            IUsuarioService users,
+            IUsuarioService usuarios,
             IJwtBearerTokenService jwtBearerTokenService
         )
         {
-            _users = users;
+            _usuarios = usuarios;
             _jwtBearerTokenService = jwtBearerTokenService;
         }
 
-        [HttpPost("Usuario")]
+        [HttpPost("Autenticar")]
         public async Task<IActionResult> Usuario(LoginViewModel login)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            var user = await _users.Get(login);
+            var usuario = await _usuarios.Buscar(login);
+
+            var claims = new List<Claim>
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, usuario.Usuario.ToString()),
+                new Claim(ClaimTypes.NameIdentifier, usuario.Usuario)
+            };
+
+
+            return Ok(_jwtBearerTokenService.CriarToken(claims));
+        }
+
+        [HttpPost("Criar")]
+        public async Task<IActionResult> Criar(LoginViewModel login)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            var usuario = await _usuarios.Buscar(login);
 
 
             var claims = new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.Sub, user.Usuario.ToString()),
-                new Claim(ClaimTypes.NameIdentifier, user.Usuario)
+                new Claim(JwtRegisteredClaimNames.Sub, usuario.Usuario.ToString()),
+                new Claim(ClaimTypes.NameIdentifier, usuario.Usuario)
             };
 
 
-            return Ok(_jwtBearerTokenService.CreateToken(claims));
+            return Ok(_jwtBearerTokenService.CriarToken(claims));
         }
     }
 }

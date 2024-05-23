@@ -17,13 +17,13 @@ namespace Estudos.Data.Repositories
             _dbSet = context.Set<TEntity>();
         }
 
-        public bool Add(TEntity obj)
+        public bool Adicionar(TEntity obj)
         {
             _dbSet.Add(obj);
             return true;
         }
 
-        public bool Update(TEntity obj)
+        public bool Atualizar(TEntity obj)
         {
             _dbSet.Update(obj);
             return true;
