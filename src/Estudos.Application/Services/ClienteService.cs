@@ -9,30 +9,31 @@ namespace Estudos.Application.Services
     public class ClienteService : IClienteService
     {
         private readonly IClienteRepository _clienteRepository;
+        private readonly IViaCepService _viaCepService;
         private readonly DbContext _context;
 
-        public ClienteService
-        (
-            IClienteRepository usuarioRepository,
-            DbContext context
-        )
+        public ClienteService(IClienteRepository clienteRepository, IViaCepService viaCepService, DbContext context)
         {
-            _clienteRepository = usuarioRepository;
+            _clienteRepository = clienteRepository;
+            _viaCepService = viaCepService;
             _context = context;
         }
 
-        public async Task<bool> Adicionar(Cliente cliente)
+        public async Task<Tuple<bool, string>> Adicionar(Cliente cliente)
         {
-             var resultado =  _clienteRepository.Adicionar(cliente);
-            _context.SaveChanges();
-            return resultado;
+            var dados = await ViaCep(cliente.Endereco.CEP);
 
+            if (dados.CepValidacao())
+                return new Tuple<bool, string>(false, "Cep Invalido");
+
+
+            var resultado = _clienteRepository.Adicionar(cliente);
+            _context.SaveChanges();
+            return new Tuple<bool, string>(true, "Cliente adicionado!");
         }
 
         public async Task<Cliente> BuscarPorId(int id, bool getDependencies = false)
-        {
-            return  _clienteRepository.BuscarPorId(id, getDependencies);
-        }
+            => _clienteRepository.BuscarPorId(id, getDependencies);
 
         public async Task<IEnumerable<Cliente>> BuscarTodos(string? nome, string? cpf, string? email)
         {
@@ -48,9 +49,7 @@ namespace Estudos.Application.Services
         {
             var dbResult = await BuscarPorId(id, true);
             if (dbResult == null)
-            {
                 return new Tuple<bool, string>(false, "Cliente não existente");
-            }
 
             dbResult.Nome = cliente.Nome;
             dbResult.Email = cliente.Email;
@@ -82,14 +81,13 @@ namespace Estudos.Application.Services
 
             return new Tuple<bool, string>(true, "Atualizado com Sucesso!");
         }
+
         public async Task<Tuple<bool, string>> Deletar(int id, int? idEndereco, int? idContato)
         {
             var cliente = _clienteRepository.BuscarPorId(id, true);
 
             if (cliente is null)
-            {
-                return new Tuple<bool, string>(false, "Cliente não existente");
-            }
+             return new Tuple<bool, string>(false, "Cliente não existente");
 
             if (idEndereco.HasValue)
             {
@@ -125,6 +123,14 @@ namespace Estudos.Application.Services
             _context.SaveChanges();
 
             return new Tuple<bool, string>(true, "Cliente removido com sucesso!");
+        }
+
+        private async Task<ViaCepResponse> ViaCep(string cep)
+            => await _viaCepService.Get(cep);
+
+        public async Task<ViaCepResponse> ConsultarCep(string cep)
+        {
+            return await ViaCep(cep);
         }
     }
 }

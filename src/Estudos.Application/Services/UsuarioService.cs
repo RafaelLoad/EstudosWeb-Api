@@ -3,8 +3,6 @@ using Estudos.Domain.Entities;
 using Estudos.Domain.Interfaces;
 using Estudos.Domain.ViewModels;
 using Microsoft.EntityFrameworkCore;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 
 namespace Estudos.Application.Login
 {
@@ -24,9 +22,9 @@ namespace Estudos.Application.Login
         }
         public async Task<User> Buscar(LoginViewModel login)
         {
-            var user = _usuario.Get(login.Usuario);
+            var usuario = _usuario.Get(login.Usuario);
 
-            if (user is null)
+            if (usuario is null)
             {
                 var novoUsuario = new User
                 {
@@ -40,7 +38,7 @@ namespace Estudos.Application.Login
 
             }
 
-            return user;
+            return usuario;
         }
     }
 }

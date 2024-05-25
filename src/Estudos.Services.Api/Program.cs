@@ -39,10 +39,9 @@ builder.Services.AddSingleton<IJwtBearerTokenService, JwtBearerTokenService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddDependencies();
+builder.Services.AddDependencies(configuration);
 builder.Services.AddAuthorization();
-
-builder.Services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ClienteValidator>());
+builder.Services.AddHttpClient();   
 
 builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
 {

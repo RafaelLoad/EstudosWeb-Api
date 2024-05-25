@@ -32,14 +32,10 @@ namespace Estudos.Services.Api.Controllers
 
             var usuario = await _usuarios.Buscar(login);
 
-            var claims = new List<Claim>
-            {
-                new Claim(JwtRegisteredClaimNames.Sub, usuario.Usuario.ToString()),
-                new Claim(ClaimTypes.NameIdentifier, usuario.Usuario)
-            };
+            if(usuario is null)
+                return NotFound("Usuário não encontrado" );
 
-
-            return Ok(_jwtBearerTokenService.CriarToken(claims));
+            return Ok(_jwtBearerTokenService.CriarToken(ClaimsList(usuario)));
         }
 
         [HttpPost("Criar")]
@@ -50,15 +46,18 @@ namespace Estudos.Services.Api.Controllers
 
             var usuario = await _usuarios.Buscar(login);
 
-
+            return Ok(_jwtBearerTokenService.CriarToken(ClaimsList(usuario)));
+        }
+        
+        private List<Claim> ClaimsList(User usuario)
+        {
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, usuario.Usuario.ToString()),
                 new Claim(ClaimTypes.NameIdentifier, usuario.Usuario)
             };
 
-
-            return Ok(_jwtBearerTokenService.CriarToken(claims));
+            return claims;
         }
     }
 }
