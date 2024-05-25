@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Estudos.Services.Api.Controllers
 {
-    [AllowAnonymous]
     [Route("api/[controller]")]
     [Authorize]
     [ApiController]

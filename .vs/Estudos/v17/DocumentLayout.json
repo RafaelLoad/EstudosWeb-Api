@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.domain\\apiresponse\\viacepresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|solutionrelative:src\\estudos.domain\\apiresponse\\viacepresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B61CB8A9-D374-4D90-B6BC-ABB490773646}|src\\Estudos.Api\\Estudos.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.api\\apiservices\\viacepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B61CB8A9-D374-4D90-B6BC-ABB490773646}|src\\Estudos.Api\\Estudos.Api.csproj|solutionrelative:src\\estudos.api\\apiservices\\viacepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|solutionrelative:src\\estudos.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.application\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|solutionrelative:src\\estudos.application\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB479133-016F-4654-8EEE-B8D9FBEF4E4E}|src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.crosscutting\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB479133-016F-4654-8EEE-B8D9FBEF4E4E}|src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj|solutionrelative:src\\estudos.crosscutting\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.crosscutting.ioc\\settings\\websettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|solutionrelative:src\\estudos.crosscutting.ioc\\settings\\websettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Interfaces\\IClienteService.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Application\\Interfaces\\IClienteService.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Interfaces\\IClienteService.cs",
-              "RelativeToolTip": "src\\Estudos.Application\\Interfaces\\IClienteService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T19:47:04.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ViaCepResponse.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\ApiResponse\\ViaCepResponse.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Domain\\ApiResponse\\ViaCepResponse.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\ApiResponse\\ViaCepResponse.cs",
-              "RelativeToolTip": "src\\Estudos.Domain\\ApiResponse\\ViaCepResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T19:40:30.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViaCepService.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\ApiServices\\ViaCepService.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Api\\ApiServices\\ViaCepService.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\ApiServices\\ViaCepService.cs",
-              "RelativeToolTip": "src\\Estudos.Api\\ApiServices\\ViaCepService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAuwB0AAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T19:31:18.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAtwDAAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T19:20:17.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BootStrap.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting\\BootStrap.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.CrossCutting\\BootStrap.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting\\BootStrap.cs",
-              "RelativeToolTip": "src\\Estudos.CrossCutting\\BootStrap.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAADMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T19:19:39.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WebSettings.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Settings\\WebSettings.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.CrossCutting.IoC\\Settings\\WebSettings.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Settings\\WebSettings.cs",
-              "RelativeToolTip": "src\\Estudos.CrossCutting.IoC\\Settings\\WebSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T19:19:25.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ClienteService.cs",
               "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Services\\ClienteService.cs",
               "RelativeDocumentMoniker": "src\\Estudos.Application\\Services\\ClienteService.cs",
               "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Services\\ClienteService.cs",
               "RelativeToolTip": "src\\Estudos.Application\\Services\\ClienteService.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAASwIIAAAAoAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAAArwIYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:25:08.546Z",
+              "WhenOpened": "2024-05-25T20:19:34.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T20:10:07.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T20:10:00.052Z",
               "EditorCaption": ""
             }
           ]
