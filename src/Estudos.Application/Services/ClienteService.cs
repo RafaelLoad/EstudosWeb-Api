@@ -24,7 +24,7 @@ namespace Estudos.Application.Services
             var dados = await ViaCep(cliente.Endereco.CEP);
 
             if (dados.CepValidacao())
-                return new Tuple<bool, string>(false, "Cep Invalido");
+                return new Tuple<bool, string>(false, "Cep Inválido");
 
 
             var resultado = _clienteRepository.Adicionar(cliente);
@@ -126,11 +126,14 @@ namespace Estudos.Application.Services
         }
 
         private async Task<ViaCepResponse> ViaCep(string cep)
-            => await _viaCepService.Get(cep);
+            => await _viaCepService.Get(TrataCep(cep));
 
         public async Task<ViaCepResponse> ConsultarCep(string cep)
         {
             return await ViaCep(cep);
         }
+
+       private string TrataCep(string cep)
+            => cep?.Replace(".", "").Replace("-", "");
     }
 }
