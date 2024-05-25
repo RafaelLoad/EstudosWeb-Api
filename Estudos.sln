@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estudos.CrossCutting", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estudos.CrossCutting.IoC", "src\Estudos.CrossCutting.IoC\Estudos.CrossCutting.IoC.csproj", "{33F545DF-E107-43DE-B256-F38307B2000B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estudos.Api", "src\Estudos.Api\Estudos.Api.csproj", "{B61CB8A9-D374-4D90-B6BC-ABB490773646}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{33F545DF-E107-43DE-B256-F38307B2000B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33F545DF-E107-43DE-B256-F38307B2000B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33F545DF-E107-43DE-B256-F38307B2000B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61CB8A9-D374-4D90-B6BC-ABB490773646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61CB8A9-D374-4D90-B6BC-ABB490773646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61CB8A9-D374-4D90-B6BC-ABB490773646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61CB8A9-D374-4D90-B6BC-ABB490773646}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +88,7 @@ Global
 		{576C8C0F-4120-4ADA-A589-6F8D04C9D57C} = {D1AB584B-2057-49F4-BC1F-E4D991289BEC}
 		{CB479133-016F-4654-8EEE-B8D9FBEF4E4E} = {576C8C0F-4120-4ADA-A589-6F8D04C9D57C}
 		{33F545DF-E107-43DE-B256-F38307B2000B} = {576C8C0F-4120-4ADA-A589-6F8D04C9D57C}
+		{B61CB8A9-D374-4D90-B6BC-ABB490773646} = {F28669D2-2CA5-4A58-AD4C-773F45E3E4B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89473656-6063-4150-AD51-1C3F82D6CBBC}

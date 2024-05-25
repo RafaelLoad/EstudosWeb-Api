@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.domain\\apiresponse\\viacepresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|solutionrelative:src\\estudos.domain\\apiresponse\\viacepresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61CB8A9-D374-4D90-B6BC-ABB490773646}|src\\Estudos.Api\\Estudos.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.api\\apiservices\\viacepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61CB8A9-D374-4D90-B6BC-ABB490773646}|src\\Estudos.Api\\Estudos.Api.csproj|solutionrelative:src\\estudos.api\\apiservices\\viacepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|solutionrelative:src\\estudos.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,32 +19,16 @@
       "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.application\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C33A024F-6BE0-40D6-90C1-37FE8D521DB9}|src\\Estudos.Application\\Estudos.Application.csproj|solutionrelative:src\\estudos.application\\interfaces\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB479133-016F-4654-8EEE-B8D9FBEF4E4E}|src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.crosscutting\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB479133-016F-4654-8EEE-B8D9FBEF4E4E}|src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj|solutionrelative:src\\estudos.crosscutting\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.crosscutting.ioc\\extensions\\fluentvalidationextesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|solutionrelative:src\\estudos.crosscutting.ioc\\extensions\\fluentvalidationextesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.crosscutting.ioc\\extensions\\messageresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|solutionrelative:src\\estudos.crosscutting.ioc\\extensions\\messageresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\services\\jwtbearertokenservicesoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\services\\jwtbearertokenservicesoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\services\\ijwtbearertokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\services\\ijwtbearertokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.services.api\\services\\jwtbearertokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\services\\jwtbearertokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|c:\\users\\55119\\documents\\github\\estudos\\src\\estudos.crosscutting.ioc\\settings\\websettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|solutionrelative:src\\estudos.crosscutting.ioc\\settings\\websettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,120 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Services\\ClienteService.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Application\\Services\\ClienteService.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Services\\ClienteService.cs",
-              "RelativeToolTip": "src\\Estudos.Application\\Services\\ClienteService.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAowE8AAAAoAAAA",
+              "DocumentIndex": 4,
+              "Title": "IClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Interfaces\\IClienteService.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Application\\Interfaces\\IClienteService.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Interfaces\\IClienteService.cs",
+              "RelativeToolTip": "src\\Estudos.Application\\Interfaces\\IClienteService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T00:08:58.904Z",
+              "WhenOpened": "2024-05-25T19:47:04.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MessageResult.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
-              "RelativeToolTip": "src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "ViaCepResponse.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\ApiResponse\\ViaCepResponse.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Domain\\ApiResponse\\ViaCepResponse.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\ApiResponse\\ViaCepResponse.cs",
+              "RelativeToolTip": "src\\Estudos.Domain\\ApiResponse\\ViaCepResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T22:10:46.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FluentValidationExtesion.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
-              "RelativeToolTip": "src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAwAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T22:10:36.161Z"
+              "WhenOpened": "2024-05-25T19:40:30.167Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwBAAAAAgAAAA",
+              "Title": "ViaCepService.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\ApiServices\\ViaCepService.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Api\\ApiServices\\ViaCepService.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\ApiServices\\ViaCepService.cs",
+              "RelativeToolTip": "src\\Estudos.Api\\ApiServices\\ViaCepService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAuwB0AAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T22:08:04.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwBYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T22:05:32.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JwtBearerTokenServicesOptions.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Services\\JwtBearerTokenServicesOptions.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Services\\JwtBearerTokenServicesOptions.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Services\\JwtBearerTokenServicesOptions.cs",
-              "RelativeToolTip": "src\\Estudos.Services.Api\\Services\\JwtBearerTokenServicesOptions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T22:05:28.751Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IJwtBearerTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Services\\IJwtBearerTokenService.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Services\\IJwtBearerTokenService.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Services\\IJwtBearerTokenService.cs",
-              "RelativeToolTip": "src\\Estudos.Services.Api\\Services\\IJwtBearerTokenService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T22:05:26.754Z",
+              "WhenOpened": "2024-05-25T19:31:18.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Program.cs",
-              "RelativeToolTip": "src\\Estudos.Services.Api\\Program.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAQwEYAAAAmAAAA",
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAtwDAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T22:05:06.469Z",
+              "WhenOpened": "2024-05-25T19:20:17.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "JwtBearerTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Services\\JwtBearerTokenService.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Services\\JwtBearerTokenService.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Services\\JwtBearerTokenService.cs",
-              "RelativeToolTip": "src\\Estudos.Services.Api\\Services\\JwtBearerTokenService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAowCIAAAABAAAA",
+              "DocumentIndex": 5,
+              "Title": "BootStrap.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting\\BootStrap.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.CrossCutting\\BootStrap.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting\\BootStrap.cs",
+              "RelativeToolTip": "src\\Estudos.CrossCutting\\BootStrap.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAADMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T21:21:43.29Z",
+              "WhenOpened": "2024-05-25T19:19:39.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WebSettings.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Settings\\WebSettings.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.CrossCutting.IoC\\Settings\\WebSettings.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Settings\\WebSettings.cs",
+              "RelativeToolTip": "src\\Estudos.CrossCutting.IoC\\Settings\\WebSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:19:25.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Application\\Services\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Services\\ClienteService.cs",
+              "RelativeToolTip": "src\\Estudos.Application\\Services\\ClienteService.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAASwIIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T18:25:08.546Z",
               "EditorCaption": ""
             }
           ]

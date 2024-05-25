@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Estudos.Services.Api.Controllers
 {
-    [Route("api/[controller]")]
     [AllowAnonymous]
+    [Route("api/[controller]")]
     [Authorize]
     [ApiController]
     public class ClienteController : Controller
@@ -44,10 +44,15 @@ namespace Estudos.Services.Api.Controllers
             return Ok(await _clienteService.BuscarTodos(nome, cpf, email));
         }
 
+        [HttpGet("Cep/{cep}")]
+        public async Task<IActionResult> Cep(string cep)
+            => Ok(await _clienteService.ConsultarCep(cep));
+
         [HttpDelete("Remover/{id}")]
         public async Task<IActionResult> Deletar(int id, int? idEndereco, int? idContato)
         {
             return Ok(await _clienteService.Deletar(id, idEndereco, idContato));
         }
+
     }
 }
