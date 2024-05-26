@@ -2,18 +2,27 @@
 using Estudos.Domain.Entities;
 using Estudos.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 
 namespace Estudos.Application.Services
 {
     public class ClienteService : IClienteService
     {
+        private readonly ILogger<ClienteService> _logger;
         private readonly IClienteRepository _clienteRepository;
         private readonly IViaCepService _viaCepService;
         private readonly DbContext _context;
 
-        public ClienteService(IClienteRepository clienteRepository, IViaCepService viaCepService, DbContext context)
+        public ClienteService
+        (
+            ILogger<ClienteService> logger,
+            IClienteRepository clienteRepository,
+            IViaCepService viaCepService,
+            DbContext context
+        )
         {
+            _logger = logger;
             _clienteRepository = clienteRepository;
             _viaCepService = viaCepService;
             _context = context;
@@ -27,7 +36,7 @@ namespace Estudos.Application.Services
                 return new Tuple<bool, string>(false, "Cep Inválido");
 
 
-            var resultado = _clienteRepository.Adicionar(cliente);
+            _ = _clienteRepository.Adicionar(cliente);
             _context.SaveChanges();
             return new Tuple<bool, string>(true, "Cliente adicionado!");
         }
@@ -87,7 +96,7 @@ namespace Estudos.Application.Services
             var cliente = _clienteRepository.BuscarPorId(id, true);
 
             if (cliente is null)
-             return new Tuple<bool, string>(false, "Cliente não existente");
+                return new Tuple<bool, string>(false, "Cliente não existente");
 
             if (idEndereco.HasValue)
             {
@@ -126,14 +135,23 @@ namespace Estudos.Application.Services
         }
 
         private async Task<ViaCepResponse> ViaCep(string cep)
-            => await _viaCepService.Get(TrataCep(cep));
-
+        {
+            try
+            {
+                return await _viaCepService.Buscar(TrataCep(cep));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Erro ao chamar serviçod de Cep : ", ex.Message);
+                return new ViaCepResponse (false, "Erro inesperado ao chamar serviço de CEP.");
+            }
+        }
         public async Task<ViaCepResponse> ConsultarCep(string cep)
         {
             return await ViaCep(cep);
         }
 
-       private string TrataCep(string cep)
-            => cep?.Replace(".", "").Replace("-", "");
+        private string TrataCep(string cep)
+             => cep?.Replace(".", "").Replace("-", "");
     }
 }

@@ -1,7 +1,5 @@
 ﻿using Estudos.Application.Interfaces;
 using Estudos.Domain.Entities;
-using Estudos.Domain.Validator;
-using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

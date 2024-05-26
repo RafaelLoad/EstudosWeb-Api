@@ -1,9 +1,7 @@
 using Estudos.CrossCutting;
 using Estudos.CrossCutting.IoC.Settings;
 using Estudos.Data.Context;
-using Estudos.Domain.Validator;
 using Estudos.Services.Api.Services;
-using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -23,7 +21,12 @@ IConfiguration configuration  = new ConfigurationBuilder()
 var logger = new LoggerConfiguration()
      .ReadFrom.Configuration(configuration)
      .Enrich.FromLogContext()
+     .WriteTo.Console()
+     .WriteTo.File("logs/arquivo.txt", rollingInterval: RollingInterval.Day)
      .CreateLogger();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 
 
 builder.Services.Configure<WebSettings>(options => configuration.Bind(options));

@@ -14,7 +14,7 @@ namespace Estudos.Api.ViaCepService
             _httpClient = httpClient;
         }
 
-        public async Task<ViaCepResponse> Get(string cep)
+        public async Task<ViaCepResponse> Buscar(string cep)
         {
             try
             {
