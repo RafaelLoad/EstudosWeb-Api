@@ -1,5 +1,4 @@
-﻿
-namespace Estudos.Domain.Entities
+﻿namespace Estudos.Domain.Entities
 {
     public class ViaCepResponse
     {
