@@ -1,0 +1,30 @@
+﻿@* @page
+@using Estudos.Domain.ViewModels
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Usuarios";
+} *@
+@* 
+<div class="text-center">
+    <h1 class="display-4">Login</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form method="post" asp-controller="login" asp-action="Autenticar">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="Username" asp-for="@Model.Usuario" required placeholder="digite seu login...">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="Password" asp-for="@Model.Senha" required placeholder="digite sua senha...">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="mt-3">Don't have an account? <a href="/register">Sign up</a></p>
+</div> *@

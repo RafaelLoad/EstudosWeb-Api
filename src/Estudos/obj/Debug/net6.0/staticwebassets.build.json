@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ijTF3hz+t0SlZXrg9Gc/bOK3jy77WOuangvqqnE0WMs=",
+  "Hash": "0TBi9Wg9xI4shoWaWnnaPYg4eIflAukD0FTAuqAL26A=",
   "Source": "Estudos.Web",
   "BasePath": "_content/Estudos.Web",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Estudos.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\wwwroot\\css\\login.css",
+      "SourceId": "Estudos.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\wwwroot\\",
+      "BasePath": "_content/Estudos.Web",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\wwwroot\\css\\site.css",

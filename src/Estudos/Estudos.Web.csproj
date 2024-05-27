@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Estudos.Api\Estudos.Api.csproj" />
+    <ProjectReference Include="..\Estudos.Application\Estudos.Application.csproj" />
+    <ProjectReference Include="..\Estudos.Domain\Estudos.Domain.csproj" />
   </ItemGroup>
 
 </Project>

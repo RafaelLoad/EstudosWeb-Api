@@ -8,6 +8,8 @@ using Estudos.Domain.Validator;
 using FluentValidation.AspNetCore;
 using Estudos.Api.ViaCepService;
 using Microsoft.Extensions.Configuration;
+using Estudos.Application.Interfaces.ApiServices;
+using Estudos.Api.ApiServices;
 
 namespace Estudos.CrossCutting
 {
@@ -28,7 +30,9 @@ namespace Estudos.CrossCutting
         {
             services
                 .AddScoped<IUsuarioService, UsuarioService>()
-                .AddScoped<IClienteService, ClienteService>();
+                .AddScoped<IClienteService, ClienteService>()
+                .AddScoped<IAutenticacaoApiService, AutenticacaoApiService>();
+    
                 
         }
 
@@ -52,6 +56,9 @@ namespace Estudos.CrossCutting
             {
                 client.BaseAddress = new Uri(configuration.GetSection("ViaCep:Url").Value);
             });
+
+            //services.AddHttpClient<IAutenticacaoApiService, AutenticacaoApiService>(client => 
+            //client)
         }
 
         private static void AddInfraSetup(IServiceCollection services)
