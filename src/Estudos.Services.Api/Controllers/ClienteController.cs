@@ -1,5 +1,6 @@
 ﻿using Estudos.Application.Interfaces;
 using Estudos.Domain.Entities;
+using Estudos.Domain.Enum;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace Estudos.Services.Api.Controllers
 {
     [Route("api/[controller]")]
     [Authorize]
+    //[AllowAnonymous]
     [ApiController]
     public class ClienteController : Controller
     {
@@ -45,11 +47,17 @@ namespace Estudos.Services.Api.Controllers
         public async Task<IActionResult> Cep(string cep)
             => Ok(await _clienteService.ConsultarCep(cep));
 
+        [Authorize(Roles = "Administrador")]
         [HttpDelete("Remover/{id}")]
         public async Task<IActionResult> Deletar(int id, int? idEndereco, int? idContato)
         {
-            return Ok(await _clienteService.Deletar(id, idEndereco, idContato));
+            await _clienteService.Deletar(id, idEndereco, idContato);
+            return NoContent();
         }
+
+        [HttpGet("BuscarTodos/Contatos")]
+        public async Task<IActionResult> TodosContatos()
+           => Ok(await _clienteService.BuscarTodosContatos());
 
     }
 }

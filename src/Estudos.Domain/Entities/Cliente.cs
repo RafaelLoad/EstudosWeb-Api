@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Estudos.Domain.Enum;
+using System.ComponentModel.DataAnnotations;
 
 namespace Estudos.Domain.Entities
 {
@@ -11,5 +12,6 @@ namespace Estudos.Domain.Entities
         public string RG { get; set; }
         public Endereco? Endereco { get; set; }
         public ICollection<Contato> Contato { get; set; }
+      
     }
 }

@@ -1,0 +1,16 @@
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\bin\Release\net6.0\Estudos.CrossCutting.IoC.deps.json
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\bin\Release\net6.0\Estudos.CrossCutting.IoC.dll
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\bin\Release\net6.0\Estudos.CrossCutting.IoC.pdb
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\bin\Release\net6.0\Estudos.Domain.dll
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\bin\Release\net6.0\Estudos.Domain.pdb
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos.CrossCutting.IoC.csproj.AssemblyReference.cache
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos.CrossCutting.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos.CrossCutting.IoC.AssemblyInfo.cs
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos.CrossCutting.IoC.sourcelink.json
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos..E08AA349.Up2Date
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos.CrossCutting.IoC.dll
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\refint\Estudos.CrossCutting.IoC.dll
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\Estudos.CrossCutting.IoC.pdb
+C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.CrossCutting.IoC\obj\Release\net6.0\ref\Estudos.CrossCutting.IoC.dll

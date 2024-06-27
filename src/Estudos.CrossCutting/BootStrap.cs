@@ -10,6 +10,9 @@ using Estudos.Api.ViaCepService;
 using Microsoft.Extensions.Configuration;
 using Estudos.Application.Interfaces.ApiServices;
 using Estudos.Api.ApiServices;
+using System.Data;
+using Estudos.CrossCutting.IoC.Settings;
+using Microsoft.Data.SqlClient;
 
 namespace Estudos.CrossCutting
 {
@@ -39,6 +42,7 @@ namespace Estudos.CrossCutting
         private static void AddDomainSetup(this IServiceCollection services)
         {
             services
+                .AddScoped<ICachingService, CachingService>()
                 .AddScoped<IUsuarioRepository, UsuarioRepository>()
                 .AddScoped<IClienteRepository, ClienteRepository>()
                 .AddScoped<IViaCepService, ViaCepService>();

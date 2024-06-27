@@ -24,10 +24,13 @@ namespace Estudos.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new ClienteMap());
-            modelBuilder.ApplyConfiguration(new ContatoMap());
-            modelBuilder.ApplyConfiguration(new EnderecoMap());
-            modelBuilder.ApplyConfiguration(new UsuarioMap());
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppContext).Assembly);
+
+            //faz a mesma coisa que em cima
+            //modelBuilder.ApplyConfiguration(new ClienteMap());
+            //modelBuilder.ApplyConfiguration(new ContatoMap());
+            //modelBuilder.ApplyConfiguration(new EnderecoMap());
+            //modelBuilder.ApplyConfiguration(new UsuarioMap());
         }
     }
 }

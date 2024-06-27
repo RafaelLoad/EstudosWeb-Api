@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Dapper/2.1.35": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Extensions.FluentValidation.Br/1.0.2": {
         "type": "package",
         "dependencies": {
@@ -878,6 +891,27 @@
     }
   },
   "libraries": {
+    "Dapper/2.1.35": {
+      "sha512": "YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
+      "type": "package",
+      "path": "dapper/2.1.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.35.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/net7.0/Dapper.dll",
+        "lib/net7.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
+      ]
+    },
     "Extensions.FluentValidation.Br/1.0.2": {
       "sha512": "ZVoXpIFkUhufHoO3/MkdIMZU0+8Mjy1K9TNd0zroT/J92SqU8V/ryZqVn4Mdbeq2aAC5yrtAhowg8Vd+FjSCSw==",
       "type": "package",
@@ -2189,6 +2223,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Dapper >= 2.1.35",
       "Estudos.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.29",
       "Microsoft.EntityFrameworkCore.InMemory >= 6.0.29",
@@ -2202,11 +2237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
+      "projectUniqueName": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Estudos.Data.csproj",
       "projectName": "Estudos.Data",
-      "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
+      "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Estudos.Data.csproj",
       "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\obj\\",
+      "outputPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2223,8 +2258,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
-              "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
+            "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+              "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj"
             }
           }
         }
@@ -2244,6 +2279,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.1.35, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

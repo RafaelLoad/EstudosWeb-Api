@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\Estudos.Web.csproj": {}
+    "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos\\Estudos.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\Estudos.Api.csproj": {
+    "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Api\\Estudos.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\Estudos.Api.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Api\\Estudos.Api.csproj",
         "projectName": "Estudos.Api",
-        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\Estudos.Api.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Api\\Estudos.Api.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Application\\Estudos.Application.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Application\\Estudos.Application.csproj"
               },
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj": {
+    "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Application\\Estudos.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Application\\Estudos.Application.csproj",
         "projectName": "Estudos.Application",
-        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Application\\Estudos.Application.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,11 +95,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Estudos.Data.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Estudos.Data.csproj"
               },
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj": {
+    "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
         "projectName": "Estudos.CrossCutting.IoC",
-        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,8 +162,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj"
               }
             }
           }
@@ -220,14 +220,14 @@
         }
       }
     },
-    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj": {
+    "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Estudos.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Estudos.Data.csproj",
         "projectName": "Estudos.Data",
-        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\Estudos.Data.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Estudos.Data.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Data\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -244,8 +244,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj"
               }
             }
           }
@@ -265,6 +265,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -306,14 +310,14 @@
         }
       }
     },
-    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+    "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj",
         "projectName": "Estudos.Domain",
-        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -376,14 +380,14 @@
         }
       }
     },
-    "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\Estudos.Web.csproj": {
+    "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos\\Estudos.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\Estudos.Web.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos\\Estudos.Web.csproj",
         "projectName": "Estudos.Web",
-        "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\Estudos.Web.csproj",
+        "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos\\Estudos.Web.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -400,14 +404,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\Estudos.Api.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Api\\Estudos.Api.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Api\\Estudos.Api.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Api\\Estudos.Api.csproj"
               },
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Application\\Estudos.Application.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Application\\Estudos.Application.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Application\\Estudos.Application.csproj"
               },
-              "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
-                "projectPath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Domain\\Estudos.Domain.csproj"
+              "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj": {
+                "projectPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Estudos.Domain.csproj"
               }
             }
           }

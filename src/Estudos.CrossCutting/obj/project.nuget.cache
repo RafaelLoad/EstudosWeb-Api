@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jFn8DI4cJMc6hBxrROb2JQwEav5XvC131pZZy/PssCMsaHK6WcaGqGXKvZHpqDQ1fMdEsXLH9PK3R1/3GXPZ6A==",
+  "dgSpecHash": "0qH35NGDceJAsPGhS+OKiFeGAB8/+TLwfvnQvHo2bMeG9Cs+IfYktpJej3blnCVskCeHHd5jSgt7f9xWZYQ2cQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj",
+  "projectFilePath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting\\Estudos.CrossCutting.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\55119\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

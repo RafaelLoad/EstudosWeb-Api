@@ -10,5 +10,6 @@ namespace Estudos.Application.Interfaces
         Task<Tuple<bool, string>> Atualizar(Cliente cliente, int id);
         Task<Tuple<bool, string>>  Deletar(int id, int? idEndereco, int? idContato);
         Task<ViaCepResponse> ConsultarCep(string cep);
+        Task<IEnumerable<Contato>> BuscarTodosContatos();
     }
 }

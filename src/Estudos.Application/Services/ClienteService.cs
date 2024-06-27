@@ -57,7 +57,7 @@ namespace Estudos.Application.Services
         public async Task<Tuple<bool, string>> Atualizar(Cliente cliente, int id)
         {
             var dbResult = await BuscarPorId(id, true);
-            if (dbResult == null)
+            if (dbResult is null)
                 return new Tuple<bool, string>(false, "Cliente não existente");
 
             dbResult.Nome = cliente.Nome;
@@ -116,7 +116,7 @@ namespace Estudos.Application.Services
             if (idContato.HasValue)
             {
                 var contato = cliente.Contato.FirstOrDefault(x => x.Id == idContato);
-                if (contato != null)
+                if (contato is not null)
                 {
                     _context.Remove(contato);
                     _context.SaveChanges();
@@ -153,5 +153,10 @@ namespace Estudos.Application.Services
 
         private string TrataCep(string cep)
              => cep?.Replace(".", "").Replace("-", "");
+
+        public async  Task<IEnumerable<Contato>> BuscarTodosContatos()
+        {
+            return _clienteRepository.BuscarTodosContatos();
+        }
     }
 }
