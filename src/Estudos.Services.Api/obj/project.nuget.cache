@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5hZ9U0UrT9+n3TcRc0BHDrO7KXZfvUnrYfNuWxKCAb+aS8aR2FMcYp+FSXsUSKcZzjCdt57EoAEXilvmm0QBtQ==",
+  "dgSpecHash": "SuVt1oHRvPmvA4yLlk5ieIIjPvRjp368oXuMJU3btKA8VAUdpKZHhbgnbBCcuPnFTqfxtnFIrFfl/HFi1O4Bog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.Services.Api\\Estudos.Services.Api.csproj",
+  "projectFilePath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Services.Api\\Estudos.Services.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\55119\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

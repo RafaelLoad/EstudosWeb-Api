@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fLOtwa618pwgIlur3vEuXlX8TFkbu8jVBkee+Nq6GcM0heC75nZL4aKgQ62InU5fspgoL9KyoVYRHQAqsL/u9w==",
+  "dgSpecHash": "AFhRjGHrhLhgeJp3NATM2x26WJXBbDRLHF9CMIwxphZJyHgYYj7nIJSeGw4TT+sAnGUwKe3+pBUCkYUAD8GKsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Documents\\GitHub\\Estudos\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
+  "projectFilePath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\55119\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",

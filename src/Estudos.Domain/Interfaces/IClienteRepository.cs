@@ -6,5 +6,6 @@ namespace Estudos.Domain.Interfaces
     {
         IEnumerable<Cliente> BuscarTodos();
         Cliente BuscarPorId(int id, bool getDependencies = false);
+        IEnumerable<Contato> BuscarTodosContatos();
     }
 }

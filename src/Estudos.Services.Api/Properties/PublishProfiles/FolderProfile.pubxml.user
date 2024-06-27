@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\inetpub</_PublishTargetUrl>
-    <History>False|2024-04-30T19:25:55.3752944Z;</History>
+    <_PublishTargetUrl>C:\Users\55119\Documents\Estudos-Clientes\src\Estudos.Services.Api\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2024-06-20T03:26:49.9468224Z;False|2024-06-20T00:24:20.0498747-03:00;True|2024-06-20T00:18:19.5161777-03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

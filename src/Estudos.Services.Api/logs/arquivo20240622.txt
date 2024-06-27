@@ -1,0 +1,5 @@
+2024-06-22 14:19:58.963 -03:00 [ERR] Erro na autenticação da controller: 
+2024-06-22 14:21:19.853 -03:00 [ERR] Erro na autenticação da controller: 
+2024-06-22 14:23:07.075 -03:00 [ERR] Erro na autenticação da controller: 
+2024-06-22 14:23:18.751 -03:00 [ERR] Erro na autenticação da controller: 
+2024-06-22 14:25:17.959 -03:00 [ERR] Erro na autenticação da controller: 

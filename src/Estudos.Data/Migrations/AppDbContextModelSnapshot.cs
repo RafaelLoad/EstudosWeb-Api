@@ -166,6 +166,10 @@ namespace Estudos.Data.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("password");
 
+                    b.Property<int>("Perfil")
+                        .HasColumnType("int")
+                        .HasColumnName("enum_perfil");
+
                     b.Property<string>("Usuario")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")

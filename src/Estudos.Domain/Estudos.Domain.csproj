@@ -7,13 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Enums\**" />
     <Compile Remove="ViewModel\**" />
+    <EmbeddedResource Remove="Enums\**" />
     <EmbeddedResource Remove="ViewModel\**" />
+    <None Remove="Enums\**" />
     <None Remove="ViewModel\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Enums\" />
   </ItemGroup>
 
   <ItemGroup>

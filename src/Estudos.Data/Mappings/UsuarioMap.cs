@@ -21,6 +21,9 @@ namespace Estudos.Data.Mappings
 
             builder.Property(x => x.Password)
                 .HasColumnName("password");
+
+            builder.Property(x => x.Perfil)
+                .HasColumnName("enum_perfil");
         }
     }
 }

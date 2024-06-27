@@ -1,12 +1,17 @@
 using Estudos.CrossCutting;
+using Estudos.CrossCutting.IoC;
+using Estudos.CrossCutting.IoC.Middlewares;
 using Estudos.CrossCutting.IoC.Settings;
 using Estudos.Data.Context;
 using Estudos.Services.Api.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using System.Data;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -44,7 +49,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDependencies(configuration);
 builder.Services.AddAuthorization();
-builder.Services.AddHttpClient();   
+builder.Services.AddHttpClient();
+builder.Services.AddMemoryCache();
+
+builder.Services.AddTransient<EnvironmentMiddleware>();
 
 builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
 {
@@ -55,7 +63,9 @@ builder.Services.AddDbContext<DbContext, AppDbContext>(options =>
         options.UseSqlServer(webSettings.ConnectionStrings.DefaultConnection,
                      b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
 
-});
+}, ServiceLifetime.Scoped);
+
+builder.Services.AddScoped<IDbConnection>((connection) => new SqlConnection(webSettings.ConnectionStrings.DefaultConnection));
 
 builder.Services.AddSwaggerGen(option =>
 {
@@ -68,7 +78,7 @@ builder.Services.AddSwaggerGen(option =>
     option.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
-        Description = "Please enter a valid token",
+        Description = "Please enter a valid token, following format 'Bearer {token}'",
         Name = "Authorization",
         Type = SecuritySchemeType.Http,
         BearerFormat = "JWT",
@@ -85,7 +95,7 @@ builder.Services.AddSwaggerGen(option =>
                     Id="Bearer"
                 }
             },
-            new string[]{}
+            Array.Empty<string>()
         }
     });
 });
@@ -113,7 +123,6 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-
 var app = builder.Build();
 
 app.UseSwagger();
@@ -124,6 +133,8 @@ app.UseSwaggerUI(c =>
 });
 app.UseHttpsRedirection();
 
+
+app.UseMiddleware<EnvironmentMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 
