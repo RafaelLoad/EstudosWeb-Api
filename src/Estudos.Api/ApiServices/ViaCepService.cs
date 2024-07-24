@@ -29,9 +29,6 @@ namespace Estudos.Api.ViaCepService
                 if (resposta.IsSuccessStatusCode)
                     return JsonSerializer.Deserialize<ViaCepResponse>(conteudoResposta);
 
-                if (resposta.IsSuccessStatusCode)
-                    return JsonSerializer.Deserialize<ViaCepResponse>(conteudoResposta);
-
                 if (resposta.StatusCode.Equals(HttpStatusCode.BadRequest))
                     return JsonSerializer.Deserialize<ViaCepResponse>(conteudoResposta);
 

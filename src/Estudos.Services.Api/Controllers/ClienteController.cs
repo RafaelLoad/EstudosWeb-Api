@@ -8,7 +8,7 @@ namespace Estudos.Services.Api.Controllers
 {
     [Route("api/[controller]")]
     [Authorize]
-    //[AllowAnonymous]
+    [AllowAnonymous]
     [ApiController]
     public class ClienteController : Controller
     {
