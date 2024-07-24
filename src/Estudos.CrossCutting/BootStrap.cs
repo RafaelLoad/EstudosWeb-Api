@@ -10,9 +10,6 @@ using Estudos.Api.ViaCepService;
 using Microsoft.Extensions.Configuration;
 using Estudos.Application.Interfaces.ApiServices;
 using Estudos.Api.ApiServices;
-using System.Data;
-using Estudos.CrossCutting.IoC.Settings;
-using Microsoft.Data.SqlClient;
 
 namespace Estudos.CrossCutting
 {

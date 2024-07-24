@@ -1,50 +1,24 @@
-{
-  "nome": "Rafael",
-  "email": "Rafael@outlook.com",
-  "cpf": "45537277820",
-  "rg": "52388272",
-  "endereco": {
-    "tipo": "Residencial",
-    "cep": "04858-167",
-    "logradouro": "",
-    "numero": 15,
-    "bairro": "Campo de fora",
-    "complemento": "",
-    "cidade": "Sao paulo",
-    "estado": "Sao paulo",
-    "referencia": "Proximo ao miguel munhoz"
-  },
-  "contato": [
-    {
-      "tipo": "Celular",
-      "ddd": 11,
-      "telefone": 989798261
-    }
-  ]
-}
-
-{
-  "nome": "Debora",
-  "email": "Debora@outlook.com",
-  "cpf": "45537277816",
-  "rg": "52388272",
-  "endereco": {
-    "tipo": "Residencial",
-    "cep": "05848160",
-    "logradouro": "",
-    "numero": 15,
-    "bairro": "Campo de fora",
-    "complemento": "",
-    "cidade": "Sao paulo",
-    "estado": "Sao paulo",
-    "referencia": "Proximo ao miguel munhoz"
-  },
-  "contato": [
-    {
-      "tipo": "Celular",
-      "ddd": 11,
-      "telefone": 989798261
-    }
-  ]
-}
-*.vsidx
+### AL ###
+#Template for AL projects for Dynamics 365 Business Central
+#launch.json folder
+.vscode/
+#Cache folder
+.alcache/
+#Symbols folder
+.alpackages/
+#Snapshots folder
+.snapshots/
+#Testing Output folder
+.output/
+#Extension App-file
+*.app
+#Rapid Application Development File
+rad.json
+#Translation Base-file
+*.g.xlf
+#License-file
+*.flf
+#Test results file
+TestResults.xml
+*.dll
+*dll

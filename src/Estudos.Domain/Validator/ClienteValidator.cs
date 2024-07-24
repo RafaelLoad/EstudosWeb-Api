@@ -1,6 +1,8 @@
 ﻿using Estudos.Domain.Entities;
 using FluentValidation;
 
+//nome, telefone, email, ddd
+
 namespace Estudos.Domain.Validator
 {
     public class ClienteValidator : AbstractValidator<Cliente>
