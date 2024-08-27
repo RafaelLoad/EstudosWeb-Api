@@ -1,42 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\",
+  "WorkspaceRootPath": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{605996D0-35BA-4D0B-92B3-80598F8073EF}|src\\Estudos\\Estudos.Web.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{605996D0-35BA-4D0B-92B3-80598F8073EF}|src\\Estudos\\Estudos.Web.csproj|solutionrelative:src\\estudos\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.services.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos.data\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|solutionrelative:src\\estudos.data\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos.services.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.services.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos.services.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|solutionrelative:src\\estudos.data\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos.crosscutting.ioc\\extensions\\fluentvalidationextesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.data\\mappings\\contatomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|solutionrelative:src\\estudos.data\\mappings\\contatomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.data\\mappings\\clientemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|solutionrelative:src\\estudos.data\\mappings\\clientemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.services.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.services.api\\services\\jwtbearertokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\services\\jwtbearertokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.services.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.services.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{605996D0-35BA-4D0B-92B3-80598F8073EF}|src\\Estudos\\Estudos.Web.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{605996D0-35BA-4D0B-92B3-80598F8073EF}|src\\Estudos\\Estudos.Web.csproj|solutionrelative:src\\estudos\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.data\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0DDC8E0-094D-425D-AE5B-087FDFF28AF3}|src\\Estudos.Data\\Estudos.Data.csproj|solutionrelative:src\\estudos.data\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.crosscutting.ioc\\extensions\\fluentvalidationextesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|solutionrelative:src\\estudos.crosscutting.ioc\\extensions\\fluentvalidationextesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos.crosscutting.ioc\\extensions\\messageresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.crosscutting.ioc\\extensions\\messageresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33F545DF-E107-43DE-B256-F38307B2000B}|src\\Estudos.CrossCutting.IoC\\Estudos.CrossCutting.IoC.csproj|solutionrelative:src\\estudos.crosscutting.ioc\\extensions\\messageresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos.domain\\validator\\clientevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|c:\\users\\55119\\documents\\01 - projetos\\estudos-clientes\\src\\estudos.domain\\validator\\clientevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F873401-6D7C-4EE3-81EC-A09AE9631269}|src\\Estudos.Domain\\Estudos.Domain.csproj|solutionrelative:src\\estudos.domain\\validator\\clientevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|c:\\users\\55119\\documents\\estudos-clientes\\src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29B21D21-C3D9-4741-9427-7E2049EB3547}|src\\Estudos.Services.Api\\Estudos.Services.Api.csproj|solutionrelative:src\\estudos.services.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,41 +70,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "src\\Estudos\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "src\\Estudos\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T16:17:06.958Z",
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\appsettings.Production.json",
+              "RelativeToolTip": "src\\Estudos.Services.Api\\appsettings.Production.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-14T00:48:54.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClienteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
-              "RelativeDocumentMoniker": "src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
-              "RelativeToolTip": "src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAMAAAA",
+              "DocumentIndex": 3,
+              "Title": "ContatoMap.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Data\\Mappings\\ContatoMap.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Data\\Mappings\\ContatoMap.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Data\\Mappings\\ContatoMap.cs",
+              "RelativeToolTip": "src\\Estudos.Data\\Mappings\\ContatoMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T01:33:25.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T14:24:43.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClienteMap.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Data\\Mappings\\ClienteMap.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Data\\Mappings\\ClienteMap.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Data\\Mappings\\ClienteMap.cs",
+              "RelativeToolTip": "src\\Estudos.Data\\Mappings\\ClienteMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:24:40.859Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "JwtBearerTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Services\\JwtBearerTokenService.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Services\\JwtBearerTokenService.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Services\\JwtBearerTokenService.cs",
+              "RelativeToolTip": "src\\Estudos.Services.Api\\Services\\JwtBearerTokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T20:58:10.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\Estudos.Services.Api\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-12T20:56:22.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAmwDUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T20:40:06.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "src\\Estudos\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "src\\Estudos\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAiwB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T16:17:06.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
+              "RelativeToolTip": "src\\Estudos.Data\\Repositories\\ClienteRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T01:33:25.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "MessageResult.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
               "RelativeDocumentMoniker": "src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
               "RelativeToolTip": "src\\Estudos.CrossCutting.IoC\\Extensions\\MessageResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,11 +187,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "FluentValidationExtesion.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
               "RelativeDocumentMoniker": "src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
               "RelativeToolTip": "src\\Estudos.CrossCutting.IoC\\Extensions\\FluentValidationExtesion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -100,59 +199,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Context\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Data\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "src\\Estudos.Data\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Data\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Data\\Context\\AppDbContext.cs",
               "RelativeToolTip": "src\\Estudos.Data\\Context\\AppDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAoAAAAdAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwCIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T01:27:54.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Services.Api\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Services.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Program.cs",
               "RelativeToolTip": "src\\Estudos.Services.Api\\Program.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAlwDwAAAAAAAAA",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAmwG0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T01:26:57.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Services.Api\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Services.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\appsettings.Development.json",
               "RelativeToolTip": "src\\Estudos.Services.Api\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABLAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-15T01:24:29.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "src\\Estudos.Services.Api\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAiwCkAAAAIAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwAoAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T01:23:39.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "ClienteValidator.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Validator\\ClienteValidator.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Domain\\Validator\\ClienteValidator.cs",
               "RelativeDocumentMoniker": "src\\Estudos.Domain\\Validator\\ClienteValidator.cs",
-              "ToolTip": "C:\\Users\\55119\\Documents\\Estudos-Clientes\\src\\Estudos.Domain\\Validator\\ClienteValidator.cs",
+              "ToolTip": "C:\\Users\\55119\\Documents\\01 - PROJETOS\\Estudos-Clientes\\src\\Estudos.Domain\\Validator\\ClienteValidator.cs",
               "RelativeToolTip": "src\\Estudos.Domain\\Validator\\ClienteValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

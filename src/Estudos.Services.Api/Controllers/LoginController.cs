@@ -40,22 +40,26 @@ namespace Estudos.Services.Api.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest();
 
-                var cacheToken = await _cachingService.GetAsync(login.Usuario.ToString());
+                //var cacheToken = await _cachingService.GetAsync(login.Usuario.ToString());
 
-                if (!string.IsNullOrEmpty(cacheToken)) 
-                    return Ok(cacheToken);
+                //if (!string.IsNullOrEmpty(cacheToken)) 
+                //    return Ok(cacheToken);
 
-                var usuario = await _usuarios.Buscar(login);
+                //var usuario = await _usuarios.Buscar(login);
 
-                if (usuario is null)
-                    return NotFound("Usuário não encontrado");
+                //if (usuario is null)
+                //    return NotFound("Usuário não encontrado");
+
+                var junin = new User()
+                {
+                    Usuario = login.Usuario,
+                    Password = login.Senha
+                };
+                var token = _jwtBearerTokenService.CriarToken(ClaimsList(junin));
 
 
-                var token = _jwtBearerTokenService.CriarToken(ClaimsList(usuario));
-
-
-                _logger.LogError("Erro na autenticação da controller: ");
-                await _cachingService.SetAsync(usuario.Usuario.ToString(), JsonConvert.SerializeObject(token));
+                //_logger.LogError("Erro na autenticação da controller: ");
+                await _cachingService.SetAsync(login.Usuario.ToString(), JsonConvert.SerializeObject(token));
 
                 return Ok(token);
             }
