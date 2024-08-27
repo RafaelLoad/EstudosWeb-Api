@@ -22,3 +22,9 @@ rad.json
 TestResults.xml
 *.dll
 *dll
+
+#Extensions c#
+*.dll
+.cache
+/bin/
+/obj/

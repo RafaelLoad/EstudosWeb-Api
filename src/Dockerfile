@@ -1,21 +1,17 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS base
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+
 WORKDIR /app
-ENV ASPNETCORE_ENVIRONMENT=Development
 
-FROM base AS build
-WORKDIR /workdir
-COPY . .
+COPY . ./
 
-RUN dotnet restore /workdir/Estudos.Services.Api/Estudos.Services.Api.csproj
-WORKDIR /workdir/.
-RUN dotnet build /workdir/Estudos.Services.Api/Estudos.Services.Api.csproj -c Release -o /workdir/build
+RUN dotnet restore 
 
-FROM build AS publish
-RUN dotnet publish /workdir/Estudos.Services.Api/Estudos.Services.Api.csproj -c Release -o /workdir/publish /p:UseAppHost=false
+RUN dotnet publish -c Release -o out
 
-EXPOSE 5000
+FROM mcr.microsoft.com/dotnet/sdk:6.0
 
-FROM base AS final
 WORKDIR /app
-COPY --from=publish /workdir/publish .
-ENTRYPOINT ["dotnet", "Estudos.Services.Api.dll"]
+
+COPY --from=build-env /app/out .
+
+ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]

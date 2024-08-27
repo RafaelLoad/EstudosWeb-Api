@@ -80,7 +80,7 @@ builder.Services.AddSwaggerGen(option =>
         In = ParameterLocation.Header,
         Description = "Please enter a valid token, following format 'Bearer {token}'",
         Name = "Authorization",
-        Type = SecuritySchemeType.Http,
+        Type = SecuritySchemeType.ApiKey,
         BearerFormat = "JWT",
         Scheme = "Bearer"
     });
@@ -106,6 +106,10 @@ builder.Services.AddAuthentication(options =>
     options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
+
+    //"Key": "4BIOSecretKeySecretKeySecretKey",
+    //"ValidAudience": "4BIOAudience",
+    //"Issuer": "4BIOIssuer"
 .AddJwtBearer(x =>
 {
     x.RequireHttpsMetadata = false;
@@ -113,9 +117,9 @@ builder.Services.AddAuthentication(options =>
     x.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateAudience = true,
-        ValidAudience = jwtOptions.Issuer,
+        ValidAudience = "4BIOIssuer",
         ValidateIssuer = true,
-        ValidIssuer = jwtOptions.Issuer,
+        ValidIssuer = "4BIOIssuer",
         ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero,
         ValidateIssuerSigningKey = true,

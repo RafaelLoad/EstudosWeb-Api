@@ -8,7 +8,6 @@ namespace Estudos.Services.Api.Controllers
 {
     [Route("api/[controller]")]
     [Authorize]
-    [AllowAnonymous]
     [ApiController]
     public class ClienteController : Controller
     {
@@ -40,7 +39,11 @@ namespace Estudos.Services.Api.Controllers
         [HttpGet("BuscarTodos")]
         public async Task<IActionResult> BuscarTodos(string? nome, string? cpf, string? email)
         {
-            return Ok(await _clienteService.BuscarTodos(nome, cpf, email));
+            //return Ok(await _clienteService.BuscarTodos(nome, cpf, email));
+            return Ok(new Cliente()
+            {
+                Id = 10
+            });
         }
 
         [HttpGet("Cep/{cep}")]
