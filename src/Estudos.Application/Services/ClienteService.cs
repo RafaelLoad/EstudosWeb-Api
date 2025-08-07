@@ -1,4 +1,6 @@
 ﻿using Estudos.Application.Interfaces;
+using Estudos.Data.Context;
+using Estudos.Domain.DTO;
 using Estudos.Domain.Entities;
 using Estudos.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -12,14 +14,14 @@ namespace Estudos.Application.Services
         private readonly ILogger<ClienteService> _logger;
         private readonly IClienteRepository _clienteRepository;
         private readonly IViaCepService _viaCepService;
-        private readonly DbContext _context;
+        private readonly AppDbContext _context;
 
         public ClienteService
         (
             ILogger<ClienteService> logger,
             IClienteRepository clienteRepository,
             IViaCepService viaCepService,
-            DbContext context
+            AppDbContext context
         )
         {
             _logger = logger;
@@ -28,35 +30,61 @@ namespace Estudos.Application.Services
             _context = context;
         }
 
-        public async Task<Tuple<bool, string>> Adicionar(Cliente cliente)
+
+        public async Task<Tuple<bool, string>> Adicionar(ClienteInputDTO clienteDto)
         {
-            var dados = await ViaCep(cliente.Endereco.CEP);
+            var dados = await ViaCep(clienteDto.Endereco.CEP);
 
             if (dados.CepValidacao())
                 return new Tuple<bool, string>(false, "Cep Inválido");
 
+            var cliente = new Cliente
+            {
+                Nome = clienteDto.Nome,
+                Email = clienteDto.Email,
+                CPF = clienteDto.CPF,
+                RG = clienteDto.RG,
+                Endereco = new Endereco
+                {
+                    Tipo = clienteDto.Endereco.Tipo,
+                    CEP = clienteDto.Endereco.CEP,
+                    Logradouro = clienteDto.Endereco.Logradouro,
+                    Numero = clienteDto.Endereco.Numero,
+                    Bairro = clienteDto.Endereco.Bairro,
+                    Complemento = clienteDto.Endereco.Complemento,
+                    Cidade = clienteDto.Endereco.Cidade,
+                    Estado = clienteDto.Endereco.Estado,
+                    Referencia = clienteDto.Endereco.Referencia
+                },
+                Contato = clienteDto.Contato.Select(c => new Contato
+                {
+                    Tipo = c.Tipo,
+                    DDD = c.DDD,
+                    Telefone = c.Telefone
+                }).ToList()
+            };
 
-            _ = _clienteRepository.Adicionar(cliente);
+            _context.Cliente.Add(cliente);
             _context.SaveChanges();
             return new Tuple<bool, string>(true, "Cliente adicionado!");
         }
 
-        public async Task<Cliente> BuscarPorId(int id, bool getDependencies = false)
-            => _clienteRepository.BuscarPorId(id, getDependencies);
+        public async Task<Cliente> BuscarPorId(int id)
+            => _clienteRepository.BuscarPorId(id);
 
-        public async Task<IEnumerable<Cliente>> BuscarTodos(string? nome, string? cpf, string? email)
+        public async Task<IEnumerable<Cliente>> BuscarTodos(string nome, string cpf, string email)
         {
-            return _clienteRepository.BuscarTodos()
+            return await _context.Cliente
                 .Where(c =>
                     (string.IsNullOrEmpty(nome) || c.Nome.Contains(nome)) &&
                     (string.IsNullOrEmpty(email) || c.Email.Contains(email)) &&
                     (string.IsNullOrEmpty(cpf) || c.CPF == cpf))
-                .ToList();
+                .ToListAsync();
         }
 
-        public async Task<Tuple<bool, string>> Atualizar(Cliente cliente, int id)
+        public async Task<Tuple<bool, string>> Atualizar(Cliente cliente)
         {
-            var dbResult = await BuscarPorId(id, true);
+            var dbResult = await BuscarPorId(cliente.Id);
             if (dbResult is null)
                 return new Tuple<bool, string>(false, "Cliente não existente");
 
@@ -85,15 +113,16 @@ namespace Estudos.Application.Services
                 }
             }
 
-            _clienteRepository.Atualizar(dbResult);
+            _context.Cliente.Update(dbResult);
             _context.SaveChanges();
 
             return new Tuple<bool, string>(true, "Atualizado com Sucesso!");
         }
 
+
         public async Task<Tuple<bool, string>> Deletar(int id, int? idEndereco, int? idContato)
         {
-            var cliente = _clienteRepository.BuscarPorId(id, true);
+            var cliente = _clienteRepository.BuscarPorId(id);
 
             if (cliente is null)
                 return new Tuple<bool, string>(false, "Cliente não existente");
@@ -128,7 +157,7 @@ namespace Estudos.Application.Services
                 }
             }
 
-            _clienteRepository.Delete(cliente);
+            _context.Cliente.Remove(cliente);
             _context.SaveChanges();
 
             return new Tuple<bool, string>(true, "Cliente removido com sucesso!");
@@ -147,16 +176,12 @@ namespace Estudos.Application.Services
             }
         }
         public async Task<ViaCepResponse> ConsultarCep(string cep)
-        {
-            return await ViaCep(cep);
-        }
+        => await ViaCep(cep);
 
         private string TrataCep(string cep)
              => cep?.Replace(".", "").Replace("-", "");
 
-        public async  Task<IEnumerable<Contato>> BuscarTodosContatos()
-        {
-            return _clienteRepository.BuscarTodosContatos();
-        }
+        public async Task<IEnumerable<Endereco>> BuscarTodosEnderecos()
+        =>  _clienteRepository.BuscarTodosEnderecos();
     }
 }

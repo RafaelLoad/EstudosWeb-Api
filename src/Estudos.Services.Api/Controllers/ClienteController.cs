@@ -1,6 +1,6 @@
 ﻿using Estudos.Application.Interfaces;
+using Estudos.Domain.DTO;
 using Estudos.Domain.Entities;
-using Estudos.Domain.Enum;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +8,7 @@ namespace Estudos.Services.Api.Controllers
 {
     [Route("api/[controller]")]
     [Authorize]
+    [AllowAnonymous]
     [ApiController]
     public class ClienteController : Controller
     {
@@ -21,29 +22,25 @@ namespace Estudos.Services.Api.Controllers
         }
 
         [HttpPost("Adicionar")]
-        public async Task<IActionResult> Adicionar(Cliente cliente)
+        public async Task<IActionResult> Adicionar(ClienteInputDTO cliente)
             => Ok(await _clienteService.Adicionar(cliente));
 
-        [HttpPut("Atualizar/{id}")]
-        public async Task<IActionResult> Atualizar(Cliente cliente, int id)
+        [HttpPut("Atualizar")]
+        public async Task<IActionResult> Atualizar(Cliente cliente)
         {
-            return Ok(await _clienteService.Atualizar(cliente, id));
+            return Ok(await _clienteService.Atualizar(cliente));
         }
 
         [HttpGet("BuscarPorId/{id}")]
-        public async Task<IActionResult> BuscarPorId(int id, bool getDependencies = false)
+        public async Task<IActionResult> BuscarPorId(int id)
         {
-            return Ok(await _clienteService.BuscarPorId(id, getDependencies));
+            return Ok(await _clienteService.BuscarPorId(id));
         }
 
         [HttpGet("BuscarTodos")]
         public async Task<IActionResult> BuscarTodos(string? nome, string? cpf, string? email)
         {
-            //return Ok(await _clienteService.BuscarTodos(nome, cpf, email));
-            return Ok(new Cliente()
-            {
-                Id = 10
-            });
+            return Ok(await _clienteService.BuscarTodos(nome, cpf, email));
         }
 
         [HttpGet("Cep/{cep}")]
@@ -58,9 +55,8 @@ namespace Estudos.Services.Api.Controllers
             return NoContent();
         }
 
-        [HttpGet("BuscarTodos/Contatos")]
-        public async Task<IActionResult> TodosContatos()
-           => Ok(await _clienteService.BuscarTodosContatos());
-
+        [HttpGet("BuscarTodos/Enderecos")]
+        public async Task<IActionResult> TodosEnderecos()
+           => Ok(await _clienteService.BuscarTodosEnderecos());
     }
 }

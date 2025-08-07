@@ -1,0 +1,52 @@
+2025-04-23 11:29:21.076 -03:00 [INF] User profile is available. Using 'C:\Users\rsoliveira\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-23 11:29:21.255 -03:00 [INF] Creating key {f390ebc5-b74e-40ba-9ef8-a658273d9eb2} with creation date 2025-04-23 14:29:21Z, activation date 2025-04-23 14:29:21Z, and expiration date 2025-07-22 14:29:21Z.
+2025-04-23 11:29:21.277 -03:00 [INF] Writing data to file 'C:\Users\rsoliveira\AppData\Local\ASP.NET\DataProtection-Keys\key-f390ebc5-b74e-40ba-9ef8-a658273d9eb2.xml'.
+2025-04-23 11:29:22.116 -03:00 [INF] Now listening on: https://localhost:7006
+2025-04-23 11:29:22.119 -03:00 [INF] Now listening on: http://localhost:5042
+2025-04-23 11:29:22.263 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 11:29:22.265 -03:00 [INF] Hosting environment: InMemoryDb
+2025-04-23 11:29:22.268 -03:00 [INF] Content root path: C:\Users\rsoliveira\Documents\01-Projetos\EstudosDDD\src\Estudos.Services.Api\
+2025-04-23 11:29:23.731 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger - -
+2025-04-23 11:29:24.683 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger - - - 301 0 - 972.5759ms
+2025-04-23 11:29:24.706 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger/index.html - -
+2025-04-23 11:29:25.120 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger/index.html - - - 200 - text/html;charset=utf-8 414.3555ms
+2025-04-23 11:29:25.289 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger/swagger-ui.css - -
+2025-04-23 11:29:25.293 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger/swagger-ui-bundle.js - -
+2025-04-23 11:29:25.353 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-23 11:29:27.834 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/_framework/aspnetcore-browser-refresh.js - -
+2025-04-23 11:29:27.850 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger/swagger-ui-standalone-preset.js - -
+2025-04-23 11:29:27.854 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger/swagger-ui.css - - - 200 144929 text/css 2564.1972ms
+2025-04-23 11:29:27.897 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/_vs/browserLink - -
+2025-04-23 11:29:27.997 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/_framework/aspnetcore-browser-refresh.js - - - 200 13792 application/javascript;+charset=utf-8 162.5342ms
+2025-04-23 11:29:28.005 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-23 11:29:28.005 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-23 11:29:28.022 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 2729.7445ms
+2025-04-23 11:29:28.028 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 177.6894ms
+2025-04-23 11:29:28.142 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 245.0847ms
+2025-04-23 11:29:28.764 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger/v1/swagger.json - -
+2025-04-23 11:29:28.776 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.3592ms
+2025-04-23 11:29:28.829 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger/favicon-32x32.png - -
+2025-04-23 11:29:28.831 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-23 11:29:28.847 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger/favicon-32x32.png - - - 200 628 image/png 18.9111ms
+2025-04-23 11:29:49.720 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/api/Cliente/Cep/05848160 - -
+2025-04-23 11:29:49.965 -03:00 [INF] Executing endpoint 'Estudos.Services.Api.Controllers.ClienteController.Cep (Estudos.Services.Api)'
+2025-04-23 11:29:50.042 -03:00 [INF] Route matched with {action = "Cep", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cep(System.String) on controller Estudos.Services.Api.Controllers.ClienteController (Estudos.Services.Api).
+2025-04-23 11:30:16.134 -03:00 [INF] User profile is available. Using 'C:\Users\rsoliveira\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-23 11:30:16.602 -03:00 [INF] Now listening on: https://localhost:7006
+2025-04-23 11:30:16.607 -03:00 [INF] Now listening on: http://localhost:5042
+2025-04-23 11:30:16.673 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 11:30:16.676 -03:00 [INF] Hosting environment: InMemoryDb
+2025-04-23 11:30:16.679 -03:00 [INF] Content root path: C:\Users\rsoliveira\Documents\01-Projetos\EstudosDDD\src\Estudos.Services.Api\
+2025-04-23 11:30:17.467 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger/index.html - -
+2025-04-23 11:30:17.832 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger/index.html - - - 200 - text/html;charset=utf-8 371.6842ms
+2025-04-23 11:30:17.909 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/_framework/aspnetcore-browser-refresh.js - -
+2025-04-23 11:30:17.914 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/_vs/browserLink - -
+2025-04-23 11:30:17.924 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/_framework/aspnetcore-browser-refresh.js - - - 200 13792 application/javascript;+charset=utf-8 14.4124ms
+2025-04-23 11:30:18.043 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.1828ms
+2025-04-23 11:30:18.257 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/swagger/v1/swagger.json - -
+2025-04-23 11:30:18.273 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7006/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.4945ms
+2025-04-23 11:30:28.676 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7006/api/Cliente/Cep/05848160 - -
+2025-04-23 11:30:28.936 -03:00 [INF] Executing endpoint 'Estudos.Services.Api.Controllers.ClienteController.Cep (Estudos.Services.Api)'
+2025-04-23 11:30:29.013 -03:00 [INF] Route matched with {action = "Cep", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Cep(System.String) on controller Estudos.Services.Api.Controllers.ClienteController (Estudos.Services.Api).
+2025-04-23 11:30:29.063 -03:00 [INF] Executed action Estudos.Services.Api.Controllers.ClienteController.Cep (Estudos.Services.Api) in 23.0358ms
+2025-04-23 11:30:29.087 -03:00 [INF] Executed endpoint 'Estudos.Services.Api.Controllers.ClienteController.Cep (Estudos.Services.Api)'

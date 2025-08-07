@@ -23,14 +23,11 @@
         }
 
         public bool CepValidacao()
-        {
-            return string.IsNullOrEmpty(cep) &&
-                   string.IsNullOrEmpty(logradouro) &&
-                   string.IsNullOrEmpty(bairro) &&
-                   string.IsNullOrEmpty(localidade) &&
-                   string.IsNullOrEmpty(ddd) &&
-                   string.IsNullOrEmpty(uf);
-        }
+        => string.IsNullOrEmpty(cep) &&
+           string.IsNullOrEmpty(logradouro) &&
+           string.IsNullOrEmpty(bairro) &&
+           string.IsNullOrEmpty(localidade) &&
+           string.IsNullOrEmpty(ddd) &&
+           string.IsNullOrEmpty(uf);
     }
-
 }

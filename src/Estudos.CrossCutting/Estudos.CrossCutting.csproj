@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Estudos.Api\Estudos.Api.csproj" />
+    <ProjectReference Include="..\Estudos.Api\Estudos.Api.External.csproj" />
     <ProjectReference Include="..\Estudos.Application\Estudos.Application.csproj" />
     <ProjectReference Include="..\Estudos.Data\Estudos.Data.csproj" />
     <ProjectReference Include="..\Estudos.Domain\Estudos.Domain.csproj" />

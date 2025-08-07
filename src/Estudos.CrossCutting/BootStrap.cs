@@ -1,15 +1,15 @@
-﻿using Estudos.Application.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
-using Estudos.Data.Repositories;
-using Estudos.Domain.Interfaces;
+﻿using Estudos.Api.ApiServices;
+using Estudos.Api.ViaCepService;
+using Estudos.Application.Interfaces;
+using Estudos.Application.Interfaces.ApiServices;
 using Estudos.Application.Login;
 using Estudos.Application.Services;
+using Estudos.Data.Repositories;
+using Estudos.Domain.Interfaces;
 using Estudos.Domain.Validator;
 using FluentValidation.AspNetCore;
-using Estudos.Api.ViaCepService;
 using Microsoft.Extensions.Configuration;
-using Estudos.Application.Interfaces.ApiServices;
-using Estudos.Api.ApiServices;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Estudos.CrossCutting
 {
@@ -31,9 +31,8 @@ namespace Estudos.CrossCutting
             services
                 .AddScoped<IUsuarioService, UsuarioService>()
                 .AddScoped<IClienteService, ClienteService>()
-                .AddScoped<IAutenticacaoApiService, AutenticacaoApiService>();
-    
-                
+                .AddScoped<IAutenticacaoApiService, AutenticacaoApiService>()
+                .AddScoped<IViaCepService, ViaCepService>();
         }
 
         private static void AddDomainSetup(this IServiceCollection services)
@@ -41,8 +40,7 @@ namespace Estudos.CrossCutting
             services
                 .AddScoped<ICachingService, CachingService>()
                 .AddScoped<IUsuarioRepository, UsuarioRepository>()
-                .AddScoped<IClienteRepository, ClienteRepository>()
-                .AddScoped<IViaCepService, ViaCepService>();
+                .AddScoped<IClienteRepository, ClienteRepository>();
         }
 
         private static void AddAValidationSetup(this IServiceCollection services)

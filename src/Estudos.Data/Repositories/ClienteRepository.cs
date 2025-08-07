@@ -11,17 +11,17 @@ namespace Estudos.Data.Repositories
         private readonly IDbConnection _dbConnectionDapper;
         private readonly DbSet<Cliente> _cliente;
 
-        public ClienteRepository(DbContext context, IDbConnection connection) : base(context)
+        public ClienteRepository(DbContext context, IDbConnection connection)/* : base(context)*/
         {
             _dbConnectionDapper = connection;
             _cliente = context.Set<Cliente>();
         }
-        public Cliente BuscarPorId(int id, bool getDependencies = false)
+        public Cliente BuscarPorId(int id)
         {
-            if (getDependencies)
-                return  _cliente.Include(c => c.Endereco).Include(c => c.Contato).FirstOrDefault(x => x.Id == id);
-
-            return  _cliente.Find(id);
+            return _cliente
+                .Include(c => c.Endereco)
+                .Include(c => c.Contato)
+                .FirstOrDefault(c => c.Id == id);
         }
 
         public IEnumerable<Cliente> BuscarTodos()
@@ -29,11 +29,10 @@ namespace Estudos.Data.Repositories
             return  _cliente.Include(c => c.Endereco).Include(c => c.Contato).ToList();
         }
 
-        public IEnumerable<Contato> BuscarTodosContatos()
+        public IEnumerable<Endereco> BuscarTodosEnderecos()
         {
-            var queryCommand = @"SELECT * FROM contato";
-            return  _dbConnectionDapper.Query<Contato>(queryCommand);
+            var queryCommand = @"SELECT * FROM Endereco";
+            return  _dbConnectionDapper.Query<Endereco>(queryCommand);
         }
     }
 }
-
