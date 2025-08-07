@@ -5,6 +5,6 @@ namespace Estudos.Application.Interfaces
 {
     public interface IUsuarioService
     {
-        Task<User> Buscar(LoginViewModel user);
+        Task<User> Buscar(LoginDTO user);
     }
 }

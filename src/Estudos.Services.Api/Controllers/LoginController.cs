@@ -5,7 +5,6 @@ using Estudos.Services.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Newtonsoft.Json;
-using System.Runtime.InteropServices;
 using System.Security.Claims;
 
 namespace Estudos.Services.Api.Controllers
@@ -33,33 +32,27 @@ namespace Estudos.Services.Api.Controllers
         }
 
         [HttpPost("Autenticar")]
-        public async Task<IActionResult> Usuario(LoginViewModel login)
+        public async Task<IActionResult> Usuario(LoginDTO login)
         {
             try
             {
                 if (!ModelState.IsValid)
                     return BadRequest();
 
-                //var cacheToken = await _cachingService.GetAsync(login.Usuario.ToString());
+                var cacheToken = await _cachingService.GetAsync(login.Usuario.ToString());
 
-                //if (!string.IsNullOrEmpty(cacheToken)) 
-                //    return Ok(cacheToken);
+                if (!string.IsNullOrEmpty(cacheToken)) 
+                    return Ok(cacheToken);
 
-                //var usuario = await _usuarios.Buscar(login);
+                var usuario = await _usuarios.Buscar(login);
 
-                //if (usuario is null)
-                //    return NotFound("Usuário não encontrado");
-
-                var junin = new User()
-                {
-                    Usuario = login.Usuario,
-                    Password = login.Senha
-                };
-                var token = _jwtBearerTokenService.CriarToken(ClaimsList(junin));
+                if (usuario is null)
+                    return NotFound("Usuário não encontrado");
 
 
-                //_logger.LogError("Erro na autenticação da controller: ");
-                await _cachingService.SetAsync(login.Usuario.ToString(), JsonConvert.SerializeObject(token));
+                var token = _jwtBearerTokenService.CriarToken(ClaimsList(usuario));
+
+                await _cachingService.SetAsync(usuario.Usuario.ToString(), JsonConvert.SerializeObject(token));
 
                 return Ok(token);
             }
@@ -71,7 +64,7 @@ namespace Estudos.Services.Api.Controllers
         }
 
         [HttpPost("Criar")]
-        public async Task<IActionResult> Criar(LoginViewModel login)
+        public async Task<IActionResult> Criar(LoginDTO login)
         {
             if (!ModelState.IsValid)
                 return BadRequest();

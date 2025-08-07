@@ -5,7 +5,7 @@ namespace Estudos.Domain.Interfaces
     public interface IClienteRepository : ICrudRepository<Cliente>
     {
         IEnumerable<Cliente> BuscarTodos();
-        Cliente BuscarPorId(int id, bool getDependencies = false);
-        IEnumerable<Contato> BuscarTodosContatos();
+        Cliente BuscarPorId(int id);
+        IEnumerable<Endereco> BuscarTodosEnderecos();
     }
 }

@@ -1,5 +1,4 @@
 using Estudos.CrossCutting;
-using Estudos.CrossCutting.IoC;
 using Estudos.CrossCutting.IoC.Middlewares;
 using Estudos.CrossCutting.IoC.Settings;
 using Estudos.Data.Context;
@@ -7,7 +6,6 @@ using Estudos.Services.Api.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -17,6 +15,8 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 IWebHostEnvironment env = builder.Environment;
+
+//Função de leitura de configuração do sistema
 IConfiguration configuration  = new ConfigurationBuilder()
     .SetBasePath(env.ContentRootPath)
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -51,6 +51,11 @@ builder.Services.AddDependencies(configuration);
 builder.Services.AddAuthorization();
 builder.Services.AddHttpClient();
 builder.Services.AddMemoryCache();
+builder.Services.AddControllers()
+    .AddJsonOptions(x =>
+        x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
+
+
 
 builder.Services.AddTransient<EnvironmentMiddleware>();
 
@@ -80,7 +85,7 @@ builder.Services.AddSwaggerGen(option =>
         In = ParameterLocation.Header,
         Description = "Please enter a valid token, following format 'Bearer {token}'",
         Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey,
+        Type = SecuritySchemeType.Http,
         BearerFormat = "JWT",
         Scheme = "Bearer"
     });
@@ -106,10 +111,6 @@ builder.Services.AddAuthentication(options =>
     options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
-
-    //"Key": "4BIOSecretKeySecretKeySecretKey",
-    //"ValidAudience": "4BIOAudience",
-    //"Issuer": "4BIOIssuer"
 .AddJwtBearer(x =>
 {
     x.RequireHttpsMetadata = false;
@@ -117,9 +118,9 @@ builder.Services.AddAuthentication(options =>
     x.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateAudience = true,
-        ValidAudience = "4BIOIssuer",
+        ValidAudience = jwtOptions.Issuer,
         ValidateIssuer = true,
-        ValidIssuer = "4BIOIssuer",
+        ValidIssuer = jwtOptions.Issuer,
         ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero,
         ValidateIssuerSigningKey = true,
@@ -128,7 +129,6 @@ builder.Services.AddAuthentication(options =>
 });
 
 var app = builder.Build();
-
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {

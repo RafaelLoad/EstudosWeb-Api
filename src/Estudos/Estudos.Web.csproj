@@ -7,8 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Estudos.Api\Estudos.Api.csproj" />
+    <ProjectReference Include="..\Estudos.Api\Estudos.Api.External.csproj" />
     <ProjectReference Include="..\Estudos.Application\Estudos.Application.csproj" />
+    <ProjectReference Include="..\Estudos.CrossCutting\Estudos.CrossCutting.csproj" />
     <ProjectReference Include="..\Estudos.Domain\Estudos.Domain.csproj" />
   </ItemGroup>
 

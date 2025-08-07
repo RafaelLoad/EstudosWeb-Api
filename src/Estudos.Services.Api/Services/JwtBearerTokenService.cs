@@ -23,6 +23,7 @@ namespace Estudos.Services.Api.Services
                 Expires = DateTime.UtcNow.AddSeconds(Convert.ToInt32(_options.ExpiresInSeconds)),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_options.Key)), SecurityAlgorithms.HmacSha256Signature),
                 Issuer = _options.Issuer,
+                IssuedAt = DateTime.UtcNow,
                 Audience = _options.Issuer
             };
 

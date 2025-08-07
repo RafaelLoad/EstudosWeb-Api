@@ -35,7 +35,7 @@ namespace Estudos.Data.Mappings
                 .HasForeignKey<Endereco>(e => e.IdCliente);
 
             builder.HasMany(x => x.Contato)
-              .WithOne()
+              .WithOne(x => x.Cliente)
               .HasForeignKey(x => x.IdCliente);
         }
     }

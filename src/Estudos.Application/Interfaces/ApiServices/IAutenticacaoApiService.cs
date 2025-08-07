@@ -5,6 +5,6 @@ namespace Estudos.Application.Interfaces.ApiServices
 {
     public interface IAutenticacaoApiService
     {
-        Task<string> Autenticar(LoginViewModel login);
+        Task<string> Autenticar(LoginDTO login);
     }
 }

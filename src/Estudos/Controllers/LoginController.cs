@@ -13,10 +13,10 @@ namespace Estudos.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Autenticar(LoginViewModel login)
+        public async Task<IActionResult> Autenticar(LoginDTO login)
         {
             if (login.EhValido(login))
-                 return View("Error"); // implementar lib de notificacao
+                 return Json(new { sucess = false, mensagem = "Necessário preencher usuário e senha !" }); // implementar lib de notificacao
 
             var usuarioLogin = await _autenticacaoService.Autenticar(login);
 
